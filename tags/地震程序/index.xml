@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>地震程序 on Welcome</title>
+    <link>https://cuglilong.github.io/tags/%E5%9C%B0%E9%9C%87%E7%A8%8B%E5%BA%8F/</link>
+    <description>Recent content in 地震程序 on Welcome</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <copyright>&amp;copy; 2018. All rights reserved.</copyright>
+    <lastBuildDate>Thu, 20 Sep 2018 22:00:21 +0800</lastBuildDate>
+    
+	<atom:link href="https://cuglilong.github.io/tags/%E5%9C%B0%E9%9C%87%E7%A8%8B%E5%BA%8F/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>DSurfTomo（V1.3)用户手册</title>
+      <link>https://cuglilong.github.io/post/2018-09-20-translation-of-dsurftomo-manual/</link>
+      <pubDate>Thu, 20 Sep 2018 22:00:21 +0800</pubDate>
+      
+      <guid>https://cuglilong.github.io/post/2018-09-20-translation-of-dsurftomo-manual/</guid>
+      <description>本文为方洪健、姚华建DSurTomo英文用户手册翻译，仅供个人学习使用，原文及程序可从方洪健Github主页下载 1 描述 DSurfTomo 是面波反演程序，它能从面波频散数据直接反演获得3D横波速度而不需要构建相速度或群速度分布图的中间步骤。程序使用了快速推进算法（FMM）计算面波每个周期源和接受台站之间的面波旅行时和射线路径，这就避免了面波层析成像中常使用的但对于复杂介质不合适的（面波）大圆弧传播假定。方法详细描述请参考方洪建2015年GJI文章。
+2 程序安装 此程序在CentOS、Debian、Ubuntu及MacOS平台上基于gfortran/ifort编译器测试成功。详细步骤如下：1.新建文件夹存放DSurfTomo源码以及实例，命令如下：mkdir DSurfTomo2.从Github上下载源码，命令如下：cd DSurfTomogit clone https://github.com/HongjianFang/DSurfTomo3.安装，命令如下：./configure or python2 configure成功编译后，可执行文件将会再/bin目录下生成。
+3 数据准备(&amp;lsquo;SurfTomo.dat&amp;rsquo;) 频散数据格式如下：#25.1 121.5 1 2 0 #(源)纬度 经度 周期索引？ 波类型（2：瑞雷波 1：勒夫波) 速度类型（0：相速度 1：群速度)25.1 121.4 0.7990 (接收台站)纬度 经度 相速度/群速度（面波频散计算）&amp;lsquo;#&amp;lsquo;号行表示源，分别是源纬度、源经度、周期索引（整数）、波类型和速度类型（后面解释）每个源后是接收台站数据：前两行是接收台站纬度和经度，第三行为相速度或群速度（面波频散计算？）周期索引(整数) ：参数文件DSurrfTomo.in(后面解释)中列出的周期矢量索引波类型 ：2表示瑞雷波，1表示勒夫波速度类型 ：0表示相速度，1表示群速度(在数据集例子中，我在script目录下写了一个Python脚本ExtractData.py来从频散数据文件中提取数据 （？）。运行python ExtractData &amp;gt; surfdataTB.dat 来准备此例子中的数据。但是你也可以使用任何方法 （？），只要你所准备的数据格式正确。)4 初始模型（MOD)  初始模型文件名必须是 MOD ，其内容如下： 0.0 0.2 0.4 0.6 0.8 1.1 1.4 1.8 2.5 0.900 0.900 0.900 0.900 0.900 0.900 0.900 0.900 0.900 0.900 0.900 0.900 0.900 0.</description>
+    </item>
+    
+  </channel>
+</rss>

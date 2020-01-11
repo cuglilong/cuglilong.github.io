@@ -1,0 +1,114 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Posts on Welcome</title>
+    <link>https://cuglilong.github.io/post/</link>
+    <description>Recent content in Posts on Welcome</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <copyright>&amp;copy; 2018. All rights reserved.</copyright>
+    <lastBuildDate>Fri, 01 Mar 2019 10:45:58 +0800</lastBuildDate>
+    
+	<atom:link href="https://cuglilong.github.io/post/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>Myanmar Field Trip（to be continue ...)</title>
+      <link>https://cuglilong.github.io/post/2019-03-01-myanmar-field/</link>
+      <pubDate>Fri, 01 Mar 2019 10:45:58 +0800</pubDate>
+      
+      <guid>https://cuglilong.github.io/post/2019-03-01-myanmar-field/</guid>
+      <description>This is a blog about my first trip to Myanmar, and it will show something about the field work and my Myanmar friends. 1.My Myanmar friedns </description>
+    </item>
+    
+    <item>
+      <title>DSurfTomo（V1.3)用户手册</title>
+      <link>https://cuglilong.github.io/post/2018-09-20-translation-of-dsurftomo-manual/</link>
+      <pubDate>Thu, 20 Sep 2018 22:00:21 +0800</pubDate>
+      
+      <guid>https://cuglilong.github.io/post/2018-09-20-translation-of-dsurftomo-manual/</guid>
+      <description>本文为方洪健、姚华建DSurTomo英文用户手册翻译，仅供个人学习使用，原文及程序可从方洪健Github主页下载 1 描述 DSurfTomo 是面波反演程序，它能从面波频散数据直接反演获得3D横波速度而不需要构建相速度或群速度分布图的中间步骤。程序使用了快速推进算法（FMM）计算面波每个周期源和接受台站之间的面波旅行时和射线路径，这就避免了面波层析成像中常使用的但对于复杂介质不合适的（面波）大圆弧传播假定。方法详细描述请参考方洪建2015年GJI文章。
+2 程序安装 此程序在CentOS、Debian、Ubuntu及MacOS平台上基于gfortran/ifort编译器测试成功。详细步骤如下：1.新建文件夹存放DSurfTomo源码以及实例，命令如下：mkdir DSurfTomo2.从Github上下载源码，命令如下：cd DSurfTomogit clone https://github.com/HongjianFang/DSurfTomo3.安装，命令如下：./configure or python2 configure成功编译后，可执行文件将会再/bin目录下生成。
+3 数据准备(&amp;lsquo;SurfTomo.dat&amp;rsquo;) 频散数据格式如下：#25.1 121.5 1 2 0 #(源)纬度 经度 周期索引？ 波类型（2：瑞雷波 1：勒夫波) 速度类型（0：相速度 1：群速度)25.1 121.4 0.7990 (接收台站)纬度 经度 相速度/群速度（面波频散计算）&amp;lsquo;#&amp;lsquo;号行表示源，分别是源纬度、源经度、周期索引（整数）、波类型和速度类型（后面解释）每个源后是接收台站数据：前两行是接收台站纬度和经度，第三行为相速度或群速度（面波频散计算？）周期索引(整数) ：参数文件DSurrfTomo.in(后面解释)中列出的周期矢量索引波类型 ：2表示瑞雷波，1表示勒夫波速度类型 ：0表示相速度，1表示群速度(在数据集例子中，我在script目录下写了一个Python脚本ExtractData.py来从频散数据文件中提取数据 （？）。运行python ExtractData &amp;gt; surfdataTB.dat 来准备此例子中的数据。但是你也可以使用任何方法 （？），只要你所准备的数据格式正确。)4 初始模型（MOD)  初始模型文件名必须是 MOD ，其内容如下： 0.0 0.2 0.4 0.6 0.8 1.1 1.4 1.8 2.5 0.900 0.900 0.900 0.900 0.900 0.900 0.900 0.900 0.900 0.900 0.900 0.900 0.900 0.</description>
+    </item>
+    
+    <item>
+      <title>Makefile工作原理</title>
+      <link>https://cuglilong.github.io/post/2018-09-18-makefile/</link>
+      <pubDate>Tue, 18 Sep 2018 15:17:36 +0800</pubDate>
+      
+      <guid>https://cuglilong.github.io/post/2018-09-18-makefile/</guid>
+      <description>本文转载自Linux中国，主要关于Makefile的工作原理  makefile能更有效的运行和编译你的程序  准备材料：  Linux系统 安装make  </description>
+    </item>
+    
+    <item>
+      <title>Linux（Ubuntu）系统操作常见问题汇总</title>
+      <link>https://cuglilong.github.io/post/2018-09-08-linux-problem/</link>
+      <pubDate>Sat, 08 Sep 2018 10:08:58 +0800</pubDate>
+      
+      <guid>https://cuglilong.github.io/post/2018-09-08-linux-problem/</guid>
+      <description>本文主要记录在使用Linux（Ubuntu）系统时所遇到的问题及解决方法,主要参考阿里云 1 输入sudo命令，例如：sudo apt-get update，出现如下报错 Linux ** is not in the sudoers file.This incident will be reported. 解决方法： 1.1 切换到管理员用户 su root 1.2 修改sudoers文件权限 chmod 777 /etc/sudoers 1.3 修改sudoers文件 vim /etc/sudoers 在 root ALL=(ALL:ALL)ALL 下面添加一行，yourName 就是你的用户名：yourName ALL=(ALL)ALL 然后退出并保存 1.4 改回文件权限 chmod 440 /etc/sudoers 1.5 测试是否解决 sudo apt-get update </description>
+    </item>
+    
+    <item>
+      <title>Win系统下安装Linux系统所遇到的问题及解决方法</title>
+      <link>https://cuglilong.github.io/post/2018-09-06-install-linux/</link>
+      <pubDate>Thu, 06 Sep 2018 09:22:45 +0800</pubDate>
+      
+      <guid>https://cuglilong.github.io/post/2018-09-06-install-linux/</guid>
+      <description>本文主要记录安装Linux（Ubuntu）系统时所遇到的各种奇怪问题以及我所使用的解决方法，此篇将持续更新记录 1 引导文件损坏（即进不去系统） 1.1 Windos引导文件损坏 我所遇到的情况是：格式化Linux系统盘（准备重装Linux系统）后重启直接进出现 grub &amp;gt; 我所采用的解决办法是： 1 首先安装好Ubuntu（Ubuntu16.04）系统 2 重启后直接进入Ubuntu系统（自动进入Ubuntu，此时无选择Ubuntu和Windows界面） 3 在Ubuntu系统中修复引导文件（grub），主要参考KII_2博文 3.1 执行如下命令 sudo grub-install /dev/sda sudo update-grub 3.2 重启即可进入系统选择界面，此时即可进入Windows系统 </description>
+    </item>
+    
+    <item>
+      <title>野外台站选点</title>
+      <link>https://cuglilong.github.io/post/2018-07-10-select-station/</link>
+      <pubDate>Tue, 10 Jul 2018 23:59:53 +0800</pubDate>
+      
+      <guid>https://cuglilong.github.io/post/2018-07-10-select-station/</guid>
+      <description>要求：给定首尾两点的经纬度坐标，要求台站间距为10km，如何确定台站数目以及各台站点经纬度。 工具：Google Earth、计算台站经纬度小程序 具体步骤：   将A、B两点投影到Google Earth上；
+  利用Google Earth的测量尺功能，测量A、B两点之间的距离；
+  计算两点之间共有多少个间距，结果取整（不足1按1算），则总共台站数+1；
+  </description>
+    </item>
+    
+    <item>
+      <title>机器学习基础知识</title>
+      <link>https://cuglilong.github.io/post/2018-05-17-machine-learning/</link>
+      <pubDate>Thu, 17 May 2018 17:47:36 +0800</pubDate>
+      
+      <guid>https://cuglilong.github.io/post/2018-05-17-machine-learning/</guid>
+      <description>1.什么是机器学习 2.机器学习相关资料 3.机器学习基础 </description>
+    </item>
+    
+    <item>
+      <title>Git基本操作</title>
+      <link>https://cuglilong.github.io/post/2017-05-14-learn-git/</link>
+      <pubDate>Mon, 14 May 2018 19:26:21 +0800</pubDate>
+      
+      <guid>https://cuglilong.github.io/post/2017-05-14-learn-git/</guid>
+      <description>1.Git是什么 分布式版本控制工具
+2.Git安装 3.Git基本操作 3.1 创建版本库 3.2 初始化版本库 3.3 提交文件到版本库 </description>
+    </item>
+    
+    <item>
+      <title>利用Hugo搭建博客并部署在Github上的方法</title>
+      <link>https://cuglilong.github.io/post/2018-05-09-building-blog/</link>
+      <pubDate>Wed, 09 May 2018 18:20:13 +0800</pubDate>
+      
+      <guid>https://cuglilong.github.io/post/2018-05-09-building-blog/</guid>
+      <description>本文主要参考Hugo中文文档及浮世尘烟博文 1.搭建博客目的 主要为记录一些软件及平时科研学习笔记
+2.准备工作 2.1 基础知识  Git基本操作（参考廖雪峰老师Git教程) Github网站基本了解  2.2 软件列表  Git Hugo Github账户申请  2.3 软件安装 1) Git软件的安装  Ubuntu系统   sudo apt-get install git  Centos系统  sudo yum install git 2）Hugo软件的安装  在Hugo官网上下载 .tar.gz 包 解压可获得二进制包  tar -zxvf hugo_0.54.0_Linux-64bit.tar.gz  将解压出的二进制包 hugo 移动到/bin文件夹下  sudo mv hugo /bin 3）Github账户申请 3.生成静态博客 git
+4.部署在Github上 5.博客编写 hugo new post/blog.md hugo --theme=blackburn --buildDrafts --baseUrl=&amp;quot;https://cuglilong.github.io/&amp;quot; cd public git add .</description>
+    </item>
+    
+    <item>
+      <title>这是一篇测试博客</title>
+      <link>https://cuglilong.github.io/post/first/</link>
+      <pubDate>Tue, 08 May 2018 00:41:23 +0800</pubDate>
+      
+      <guid>https://cuglilong.github.io/post/first/</guid>
+      <description>李龙的第一篇博客</description>
+    </item>
+    
+  </channel>
+</rss>

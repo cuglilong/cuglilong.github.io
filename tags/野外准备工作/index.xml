@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>野外准备工作 on Welcome</title>
+    <link>https://cuglilong.github.io/tags/%E9%87%8E%E5%A4%96%E5%87%86%E5%A4%87%E5%B7%A5%E4%BD%9C/</link>
+    <description>Recent content in 野外准备工作 on Welcome</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <copyright>&amp;copy; 2018. All rights reserved.</copyright>
+    <lastBuildDate>Tue, 10 Jul 2018 23:59:53 +0800</lastBuildDate>
+    
+	<atom:link href="https://cuglilong.github.io/tags/%E9%87%8E%E5%A4%96%E5%87%86%E5%A4%87%E5%B7%A5%E4%BD%9C/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>野外台站选点</title>
+      <link>https://cuglilong.github.io/post/2018-07-10-select-station/</link>
+      <pubDate>Tue, 10 Jul 2018 23:59:53 +0800</pubDate>
+      
+      <guid>https://cuglilong.github.io/post/2018-07-10-select-station/</guid>
+      <description>要求：给定首尾两点的经纬度坐标，要求台站间距为10km，如何确定台站数目以及各台站点经纬度。 工具：Google Earth、计算台站经纬度小程序 具体步骤：   将A、B两点投影到Google Earth上；
+  利用Google Earth的测量尺功能，测量A、B两点之间的距离；
+  计算两点之间共有多少个间距，结果取整（不足1按1算），则总共台站数+1；
+  </description>
+    </item>
+    
+  </channel>
+</rss>
