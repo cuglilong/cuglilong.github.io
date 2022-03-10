@@ -1,0 +1,15 @@
+<rss xmlns:atom="http://www.w3.org/2005/Atom" version="2.0">
+  <channel>
+    <title>地震程序 - 标签 - Long&#39;s blog</title>
+    <link>https://cuglilong.github.io/tags/%E5%9C%B0%E9%9C%87%E7%A8%8B%E5%BA%8F/</link>
+    <description>地震程序 - 标签 - Long&#39;s blog</description>
+    <generator>Hugo -- gohugo.io</generator><language>zh-CN</language><managingEditor>cuglilong@163.com (cuglilong)</managingEditor>
+      <webMaster>cuglilong@163.com (cuglilong)</webMaster><lastBuildDate>Thu, 20 Sep 2018 22:00:21 &#43;0800</lastBuildDate><atom:link href="https://cuglilong.github.io/tags/%E5%9C%B0%E9%9C%87%E7%A8%8B%E5%BA%8F/" rel="self" type="application/rss+xml" /><item>
+  <title>DSurfTomo（V1.3)用户手册</title>
+  <link>https://cuglilong.github.io/posts/2018-09-20-translation-of-dsurftomo-manual/</link>
+  <pubDate>Thu, 20 Sep 2018 22:00:21 &#43;0800</pubDate>
+  <author>cuglilong</author>
+  <guid>https://cuglilong.github.io/posts/2018-09-20-translation-of-dsurftomo-manual/</guid>
+  <description><![CDATA[本文为方洪健、姚华建DSurTomo英文用户手册翻译，仅供个人学习使用，原文及程序可从方洪健Github主页下载 1 描述 DSurfTomo 是面波反演程序，它能]]></description>
+</item></channel>
+</rss>

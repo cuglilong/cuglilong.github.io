@@ -1,0 +1,230 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="robots" content="noodp" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge, chrome=1">
+    <title>Makefile工作原理 - Long&#39;s blog</title><meta name="author" content="cuglilong: ">
+<meta name="description" content="本文转载自Linux中国，主要关于Makefile的工作原理 makefile能更有效的运行和编译你的程序 准备材料： Linux系统 安装make" />
+<meta name="keywords" content="makefile" /><meta itemprop="name" content="Makefile工作原理">
+<meta itemprop="description" content="本文转载自Linux中国，主要关于Makefile的工作原理 makefile能更有效的运行和编译你的程序 准备材料： Linux系统 安装make"><meta itemprop="datePublished" content="2018-09-18T15:17:36+08:00" />
+<meta itemprop="dateModified" content="2018-09-18T15:17:36+08:00" />
+<meta itemprop="wordCount" content="70"><meta itemprop="image" content="https://cuglilong.github.io/logo.png"/>
+<meta itemprop="keywords" content="makefile," /><meta property="og:title" content="Makefile工作原理" />
+<meta property="og:description" content="本文转载自Linux中国，主要关于Makefile的工作原理 makefile能更有效的运行和编译你的程序 准备材料： Linux系统 安装make" />
+<meta property="og:type" content="article" />
+<meta property="og:url" content="https://cuglilong.github.io/posts/2018-09-18-makefile/" /><meta property="og:image" content="https://cuglilong.github.io/logo.png"/><meta property="article:section" content="posts" />
+<meta property="article:published_time" content="2018-09-18T15:17:36+08:00" />
+<meta property="article:modified_time" content="2018-09-18T15:17:36+08:00" />
+
+<meta name="twitter:card" content="summary_large_image"/>
+<meta name="twitter:image" content="https://cuglilong.github.io/logo.png"/>
+
+<meta name="twitter:title" content="Makefile工作原理"/>
+<meta name="twitter:description" content="本文转载自Linux中国，主要关于Makefile的工作原理 makefile能更有效的运行和编译你的程序 准备材料： Linux系统 安装make"/>
+<meta name="application-name" content="FixIt">
+<meta name="apple-mobile-web-app-title" content="FixIt"><meta name="theme-color" media="(prefers-color-scheme: light)" content="#ffffff"><meta name="theme-color" media="(prefers-color-scheme: dark)" content="#252627"><meta name="msapplication-TileColor" content="#da532c"><link rel="shortcut icon" type="image/x-icon" href="/favicon.ico" />
+    <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png"><link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png"><link rel="mask-icon" href="/safari-pinned-tab.svg" color="#5bbad5"><link rel="manifest" href="/site.webmanifest"><link rel="canonical" href="https://cuglilong.github.io/posts/2018-09-18-makefile/" /><link rel="prev" href="https://cuglilong.github.io/posts/2018-09-08-linux-problem/" /><link rel="next" href="https://cuglilong.github.io/posts/2018-09-20-translation-of-dsurftomo-manual/" /><link rel="stylesheet" href="/lib/normalize/normalize.min.css"><link rel="stylesheet" href="/css/style.min.css"><link rel="stylesheet" href="/lib/fontawesome-free/all.min.css"><link rel="stylesheet" href="/lib/animate/animate.min.css"><script type="application/ld+json">
+  {
+    "@context": "http://schema.org",
+    "@type": "BlogPosting",
+    "headline": "Makefile工作原理",
+    "inLanguage": "zh-CN",
+    "mainEntityOfPage": {
+      "@type": "WebPage",
+      "@id": "https:\/\/cuglilong.github.io\/posts\/2018-09-18-makefile\/"
+    },"genre": "posts","keywords": "makefile","wordcount":  70 ,
+    "url": "https:\/\/cuglilong.github.io\/posts\/2018-09-18-makefile\/","datePublished": "2018-09-18T15:17:36+08:00","dateModified": "2018-09-18T15:17:36+08:00","publisher": {
+      "@type": "Organization",
+      "name": ""},"author": {
+        "@type": "Person",
+        "name": "cuglilong"
+      },"description": ""
+  }
+  </script></head>
+  <body header-desktop="" header-mobile=""><script type="text/javascript">(window.localStorage && localStorage.getItem('theme') ? localStorage.getItem('theme') === 'dark' : ('auto' === 'auto' ? window.matchMedia('(prefers-color-scheme: dark)').matches : 'auto' === 'dark')) && document.body.setAttribute('theme', 'dark');</script>
+
+    <div id="mask"></div><div class="wrapper"><header class="desktop" id="header-desktop">
+  <div class="header-wrapper">
+    <div class="header-title">
+      <a href="/" title="Long&#39;s blog"><span class="header-title-text">Long&#39;s blog</span></a></div>
+    <div class="menu">
+      <div class="menu-inner"><a class="menu-item" href="/posts/"> 文章 </a><a class="menu-item" href="/tags/"> 标签 </a><a class="menu-item" href="/categories/"> 分类 </a><span class="menu-item delimiter"></span><span class="menu-item search" id="search-desktop">
+            <input type="text" placeholder="搜索文章标题或内容 ..." id="search-input-desktop">
+            <a href="javascript:void(0);" class="search-button search-toggle" id="search-toggle-desktop" title="搜索">
+              <i class="fas fa-search fa-fw"></i>
+            </a>
+            <a href="javascript:void(0);" class="search-button search-clear" id="search-clear-desktop" title="清空">
+              <i class="fas fa-times-circle fa-fw"></i>
+            </a>
+            <span class="search-button search-loading" id="search-loading-desktop">
+              <i class="fas fa-spinner fa-fw fa-spin"></i>
+            </span>
+          </span><a href="javascript:void(0);" class="menu-item theme-switch" title="切换主题">
+          <i class="fas fa-adjust fa-fw"></i>
+        </a>
+      </div>
+    </div>
+  </div>
+</header><header class="mobile" id="header-mobile">
+  <div class="header-container">
+    <div class="header-wrapper">
+      <div class="header-title">
+        <a href="/" title="Long&#39;s blog"><span class="header-title-text">Long&#39;s blog</span></a></div>
+      <div class="menu-toggle" id="menu-toggle-mobile">
+        <span></span><span></span><span></span>
+      </div>
+    </div>
+    <div class="menu" id="menu-mobile"><div class="search-wrapper">
+          <div class="search mobile" id="search-mobile">
+            <input type="text" placeholder="搜索文章标题或内容 ..." id="search-input-mobile">
+            <a href="javascript:void(0);" class="search-button search-toggle" id="search-toggle-mobile" title="搜索">
+              <i class="fas fa-search fa-fw"></i>
+            </a>
+            <a href="javascript:void(0);" class="search-button search-clear" id="search-clear-mobile" title="清空">
+              <i class="fas fa-times-circle fa-fw"></i>
+            </a>
+            <span class="search-button search-loading" id="search-loading-mobile">
+              <i class="fas fa-spinner fa-fw fa-spin"></i>
+            </span>
+          </div>
+          <a href="javascript:void(0);" class="search-cancel" id="search-cancel-mobile">
+            取消
+          </a>
+        </div><a class="menu-item" href="/posts/" title="">文章</a><a class="menu-item" href="/tags/" title="">标签</a><a class="menu-item" href="/categories/" title="">分类</a><a href="javascript:void(0);" class="menu-item theme-switch" title="切换主题">
+        <i class="fas fa-adjust fa-fw"></i>
+      </a></div>
+  </div>
+</header>
+<div class="search-dropdown desktop">
+  <div id="search-dropdown-desktop"></div>
+</div>
+<div class="search-dropdown mobile">
+  <div id="search-dropdown-mobile"></div>
+</div>
+<main class="container" page-style="normal"><aside class="toc" id="toc-auto"><h2 class="toc-title">目录</h2>
+      <div class="toc-content" id="toc-content-auto"></div></aside>
+
+  <aside class="aside-custom">
+    
+  </aside>
+
+  <article class="page single"><h1 class="single-title animate__animated animate__flipInX">Makefile工作原理</h1><div class="post-meta">
+      <div class="post-meta-line"><span class="post-author"><a
+  href="/"
+  
+    title="Author"
+  
+  
+  
+    rel=" author"
+  
+  
+  
+    class=" author"
+  
+  
+><i class="fas fa-user-circle fa-fw"></i>cuglilong</a></span></div>
+      <div class="post-meta-line"><span title=2018-09-18&#32;15:17:36>
+            <i class="far fa-calendar-alt fa-fw"></i>&nbsp;<time datetime="2018-09-18" >2018-09-18</time>
+          </span>&nbsp;<i class="fas fa-pencil-alt fa-fw"></i>&nbsp;约 70 字&nbsp;
+        <i class="far fa-clock fa-fw"></i>&nbsp;预计阅读 1 分钟&nbsp;</div>
+    </div><div class="details toc" id="toc-static" kept="false">
+        <div class="details-summary toc-title">
+          <span>目录</span>
+          <span><i class="details-icon fas fa-angle-right"></i></span>
+        </div>
+        <div class="details-content toc-content" id="toc-content-static"><nav id="TableOfContents">
+  <ul>
+    <li>
+      <ul>
+        <li></li>
+      </ul>
+    </li>
+  </ul>
+</nav></div>
+      </div><div class="content" id="content"><h5 id="本文转载自linux中国httpslinuxcnarticle-10001-1html主要关于makefile的工作原理">本文转载自<a
+  href="https://linux.cn/article-10001-1.html"
+  
+  
+    
+    target="_blank"
+  
+  
+    rel="external nofollow noopener noreffer"
+  
+  
+  
+  
+>Linux中国</a>，主要关于Makefile的工作原理</h5>
+<ul>
+<li>makefile能更有效的运行和编译你的程序</li>
+</ul>
+<h4 id="准备材料">准备材料：</h4>
+<ul>
+<li>Linux系统</li>
+<li>安装make</li>
+</ul>
+</div><div class="post-footer" id="post-footer">
+  <div class="post-info">
+    <div class="post-info-line">
+      <div class="post-info-mod">
+        <span title=2018-09-18&#32;15:17:36>更新于 2018-09-18</span>
+      </div>
+      <div class="post-info-license"></div>
+    </div>
+    <div class="post-info-line">
+      <div class="post-info-md"></div>
+      <div class="post-info-share">
+        <span></span>
+      </div>
+    </div>
+  </div>
+
+  <div class="post-info-more">
+    <section class="post-tags"><i class="fas fa-tags fa-fw"></i>&nbsp;<a href="/tags/makefile/">makefile</a></section>
+    <section>
+      <span><a href="javascript:void(0);" onclick="window.history.back();">返回</a></span>&nbsp;|&nbsp;<span><a href="/">主页</a></span>
+    </section>
+  </div>
+
+  <div class="post-nav"><a href="/posts/2018-09-08-linux-problem/" class="prev" rel="prev" title="Linux（Ubuntu）系统操作常见问题汇总"><i class="fas fa-angle-left fa-fw"></i>Linux（Ubuntu）系统操作常见问题汇总</a>
+      <a href="/posts/2018-09-20-translation-of-dsurftomo-manual/" class="next" rel="next" title="DSurfTomo（V1.3)用户手册">DSurfTomo（V1.3)用户手册<i class="fas fa-angle-right fa-fw"></i></a></div>
+</div>
+<div id="comments"><div id="disqus_thread" class="comment"></div><noscript>
+        Please enable JavaScript to view the comments powered by <a href="https://disqus.com/?ref_noscript" rel="external nofollow noopener noreffer">Disqus</a>.
+      </noscript></div></article></main><footer class="footer">
+    <div class="footer-container"><div class="footer-line powered">由 <a href="https://gohugo.io/" target="_blank" rel="external nofollow noopener noreffer" title="Hugo 0.93.2">Hugo</a> 强力驱动 | 主题 - <a href="https://github.com/Lruihao/FixIt" target="_blank" rel="external nofollow noopener noreffer" title="FixIt 0.2.13"><img class="fixit-icon" src="/images/fixit.svg" alt="FixIt logo" /> FixIt</a>
+        </div><div class="footer-line copyright"><i class="far fa-copyright fa-fw"></i><span itemprop="copyrightYear">2018 - 2022</span><span class="author" itemprop="copyrightHolder">
+              <a
+  href="/"
+  
+  
+  
+  
+  
+  
+>cuglilong</a></span><span class="footer-divider"></span><span class="license"><a rel="license external nofollow noopener noreffer" href="https://creativecommons.org/licenses/by-nc/4.0/" target="_blank">CC BY-NC 4.0</a></span></div><div class="footer-line ibruce">
+          <span id="busuanzi_container_site_uv" title=总访客数
+            ><i class="far fa-user"></i>
+            <span id="busuanzi_value_site_uv"
+              ><i class="fa fa-spinner fa-spin"></i
+            ></span
+          ></span><span id="busuanzi_container_site_pv" class="footer-divider" title=总访问量
+            ><i class="far fa-eye"></i>
+            <span id="busuanzi_value_site_pv"
+              ><i class="fa fa-spinner fa-spin"></i
+            ></span
+          ></span>
+        </div></div>
+  </footer></div>
+
+    <div id="fixed-buttons"><a href="#" id="back-to-top" class="fixed-button" title="回到顶部">
+        <i class="fas fa-arrow-up fa-fw"></i>
+      </a><a href="#" id="view-comments" class="fixed-button" title="查看评论">
+        <i class="fas fa-comment fa-fw"></i>
+      </a>
+    </div><link rel="stylesheet" href="/lib/katex/katex.min.css"><link rel="stylesheet" href="/lib/katex/copy-tex.min.css"><script type="text/javascript" src="https://cuglilong.disqus.com/embed.js" defer></script><script type="text/javascript" src="/lib/autocomplete/autocomplete.min.js" defer></script><script type="text/javascript" src="/lib/lunr/lunr.min.js" defer></script><script type="text/javascript" src="/lib/lunr/lunr.stemmer.support.min.js" defer></script><script type="text/javascript" src="/lib/lunr/lunr.zh.min.js" defer></script><script type="text/javascript" src="/lib/lazysizes/lazysizes.min.js" async defer></script><script type="text/javascript" src="/lib/clipboard/clipboard.min.js" defer></script><script type="text/javascript" src="/lib/katex/katex.min.js" defer></script><script type="text/javascript" src="/lib/katex/auto-render.min.js" defer></script><script type="text/javascript" src="/lib/katex/copy-tex.min.js" defer></script><script type="text/javascript" src="/lib/katex/mhchem.min.js" defer></script><script type="text/javascript" src="//busuanzi.ibruce.info/busuanzi/2.3/busuanzi.pure.mini.js" async defer></script><script type="text/javascript">window.config={"code":{"copyTitle":"复制到剪贴板","editLockTitle":"锁定可编辑代码块","editUnLockTitle":"解锁可编辑代码块","editable":true,"maxShownLines":10},"comment":{},"enablePWA":true,"ibruce":{"enable":true,"siteTime":""},"math":{"delimiters":[{"display":true,"left":"$$","right":"$$"},{"display":true,"left":"\\[","right":"\\]"},{"display":false,"left":"$","right":"$"},{"display":false,"left":"\\(","right":"\\)"}],"strict":false},"search":{"highlightTag":"em","lunrIndexURL":"/index.json","lunrLanguageCode":"zh","lunrSegmentitURL":"/lib/lunr/lunr.segmentit.js","maxResultLength":10,"noResultsFound":"没有找到结果","snippetLength":50,"type":"lunr"}};</script><script type="text/javascript" src="/js/theme.min.js" defer></script></body>
+</html>

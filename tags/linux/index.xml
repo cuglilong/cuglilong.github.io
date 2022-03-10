@@ -1,0 +1,22 @@
+<rss xmlns:atom="http://www.w3.org/2005/Atom" version="2.0">
+  <channel>
+    <title>Linux - 标签 - Long&#39;s blog</title>
+    <link>https://cuglilong.github.io/tags/linux/</link>
+    <description>Linux - 标签 - Long&#39;s blog</description>
+    <generator>Hugo -- gohugo.io</generator><language>zh-CN</language><managingEditor>cuglilong@163.com (cuglilong)</managingEditor>
+      <webMaster>cuglilong@163.com (cuglilong)</webMaster><lastBuildDate>Sat, 08 Sep 2018 10:08:58 &#43;0800</lastBuildDate><atom:link href="https://cuglilong.github.io/tags/linux/" rel="self" type="application/rss+xml" /><item>
+  <title>Linux（Ubuntu）系统操作常见问题汇总</title>
+  <link>https://cuglilong.github.io/posts/2018-09-08-linux-problem/</link>
+  <pubDate>Sat, 08 Sep 2018 10:08:58 &#43;0800</pubDate>
+  <author>cuglilong</author>
+  <guid>https://cuglilong.github.io/posts/2018-09-08-linux-problem/</guid>
+  <description><![CDATA[本文主要记录在使用Linux（Ubuntu）系统时所遇到的问题及解决方法,主要参考阿里云 1 输入sudo命令，例如：sudo apt-get update，出]]></description>
+</item><item>
+  <title>Win系统下安装Linux系统所遇到的问题及解决方法</title>
+  <link>https://cuglilong.github.io/posts/2018-09-06-install-linux/</link>
+  <pubDate>Thu, 06 Sep 2018 09:22:45 &#43;0800</pubDate>
+  <author>cuglilong</author>
+  <guid>https://cuglilong.github.io/posts/2018-09-06-install-linux/</guid>
+  <description><![CDATA[本文主要记录安装Linux（Ubuntu）系统时所遇到的各种奇怪问题以及我所使用的解决方法，此篇将持续更新记录 1 引导文件损坏（即进不去系统）]]></description>
+</item></channel>
+</rss>

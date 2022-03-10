@@ -1,0 +1,15 @@
+<rss xmlns:atom="http://www.w3.org/2005/Atom" version="2.0">
+  <channel>
+    <title>hugo - 标签 - Long&#39;s blog</title>
+    <link>https://cuglilong.github.io/tags/hugo/</link>
+    <description>hugo - 标签 - Long&#39;s blog</description>
+    <generator>Hugo -- gohugo.io</generator><language>zh-CN</language><managingEditor>cuglilong@163.com (cuglilong)</managingEditor>
+      <webMaster>cuglilong@163.com (cuglilong)</webMaster><lastBuildDate>Wed, 09 May 2018 18:20:13 &#43;0800</lastBuildDate><atom:link href="https://cuglilong.github.io/tags/hugo/" rel="self" type="application/rss+xml" /><item>
+  <title>利用Hugo搭建博客并部署在Github上的方法</title>
+  <link>https://cuglilong.github.io/posts/2018-05-09-building-blog/</link>
+  <pubDate>Wed, 09 May 2018 18:20:13 &#43;0800</pubDate>
+  <author>cuglilong</author>
+  <guid>https://cuglilong.github.io/posts/2018-05-09-building-blog/</guid>
+  <description><![CDATA[本文主要参考Hugo中文文档及浮世尘烟博文 1.搭建博客目的 主要为记录一些软件及平时科研学习笔记 2.准备工作 2.1 基础知识 Git基本操作（参考廖雪]]></description>
+</item></channel>
+</rss>

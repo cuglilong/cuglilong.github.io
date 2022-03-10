@@ -1,0 +1,15 @@
+<rss xmlns:atom="http://www.w3.org/2005/Atom" version="2.0">
+  <channel>
+    <title>makefile - 标签 - Long&#39;s blog</title>
+    <link>https://cuglilong.github.io/tags/makefile/</link>
+    <description>makefile - 标签 - Long&#39;s blog</description>
+    <generator>Hugo -- gohugo.io</generator><language>zh-CN</language><managingEditor>cuglilong@163.com (cuglilong)</managingEditor>
+      <webMaster>cuglilong@163.com (cuglilong)</webMaster><lastBuildDate>Tue, 18 Sep 2018 15:17:36 &#43;0800</lastBuildDate><atom:link href="https://cuglilong.github.io/tags/makefile/" rel="self" type="application/rss+xml" /><item>
+  <title>Makefile工作原理</title>
+  <link>https://cuglilong.github.io/posts/2018-09-18-makefile/</link>
+  <pubDate>Tue, 18 Sep 2018 15:17:36 &#43;0800</pubDate>
+  <author>cuglilong</author>
+  <guid>https://cuglilong.github.io/posts/2018-09-18-makefile/</guid>
+  <description><![CDATA[本文转载自Linux中国，主要关于Makefile的工作原理 makefile能更有效的运行和编译你的程序 准备材料： Linux系统 安装make]]></description>
+</item></channel>
+</rss>
