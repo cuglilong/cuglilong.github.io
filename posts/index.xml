@@ -4,12 +4,19 @@
     <link>https://cuglilong.github.io/posts/</link>
     <description>所有文章 | Long&#39;s blog</description>
     <generator>Hugo -- gohugo.io</generator><language>zh-CN</language><managingEditor>cuglilong@163.com (cuglilong)</managingEditor>
-      <webMaster>cuglilong@163.com (cuglilong)</webMaster><lastBuildDate>Thu, 10 Mar 2022 19:18:42 &#43;0800</lastBuildDate><atom:link href="https://cuglilong.github.io/posts/" rel="self" type="application/rss+xml" /><item>
+      <webMaster>cuglilong@163.com (cuglilong)</webMaster><lastBuildDate>Thu, 10 Mar 2022 21:27:08 &#43;0800</lastBuildDate><atom:link href="https://cuglilong.github.io/posts/" rel="self" type="application/rss+xml" /><item>
+  <title>2022 03 10 Example Blog</title>
+  <link>https://cuglilong.github.io/posts/2022-03-10-example-blog/</link>
+  <pubDate>Thu, 10 Mar 2022 21:27:08 &#43;0800</pubDate>
+  <author>作者</author>
+  <guid>https://cuglilong.github.io/posts/2022-03-10-example-blog/</guid>
+  <description><![CDATA[]]></description>
+</item><item>
   <title>2022 03 10 Learn Html</title>
-  <link>https://cuglilong.github.io/posts/2022-03-10-learn-html/</link>
+  <link>https://cuglilong.github.io/posts/2022-03-10-about-blog/</link>
   <pubDate>Thu, 10 Mar 2022 19:18:42 &#43;0800</pubDate>
   <author>作者</author>
-  <guid>https://cuglilong.github.io/posts/2022-03-10-learn-html/</guid>
+  <guid>https://cuglilong.github.io/posts/2022-03-10-about-blog/</guid>
   <description><![CDATA[]]></description>
 </item><item>
   <title>Myanmar Field Trip（to be continue ...)</title>
@@ -67,12 +74,5 @@
   <author>cuglilong</author>
   <guid>https://cuglilong.github.io/posts/2017-05-14-learn-git/</guid>
   <description><![CDATA[1.Git是什么 分布式版本控制工具 2.Git安装 3.Git基本操作 3.1 创建版本库 3.2 初始化版本库 3.3 提交文件到版本库]]></description>
-</item><item>
-  <title>利用Hugo搭建博客并部署在Github上的方法</title>
-  <link>https://cuglilong.github.io/posts/2018-05-09-building-blog/</link>
-  <pubDate>Wed, 09 May 2018 18:20:13 &#43;0800</pubDate>
-  <author>cuglilong</author>
-  <guid>https://cuglilong.github.io/posts/2018-05-09-building-blog/</guid>
-  <description><![CDATA[本文主要参考Hugo中文文档及浮世尘烟博文 1.搭建博客目的 主要为记录一些软件及平时科研学习笔记 2.准备工作 2.1 基础知识 Git基本操作（参考廖雪]]></description>
 </item></channel>
 </rss>
