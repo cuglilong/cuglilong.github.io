@@ -1,0 +1,660 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="robots" content="noodp" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge, chrome=1">
+    <title>SEIS_FILO中文手册 - Long&#39;s blog</title><meta name="author" content="cuglilong: ">
+<meta name="description" content="Long blog" />
+<meta name="keywords" content="draft" /><meta itemprop="name" content="SEIS_FILO中文手册">
+<meta itemprop="description" content=""><meta itemprop="datePublished" content="2022-12-08T09:43:30+08:00" />
+<meta itemprop="dateModified" content="2022-12-08T09:43:30+08:00" />
+<meta itemprop="wordCount" content="2120"><meta itemprop="image" content="https://cuglilong.github.io/logo.png"/>
+<meta itemprop="keywords" content="draft," /><meta property="og:title" content="SEIS_FILO中文手册" />
+<meta property="og:description" content="" />
+<meta property="og:type" content="article" />
+<meta property="og:url" content="https://cuglilong.github.io/posts/2022-12-08-seisfil/2022-12-03-seisfilo-manual-zh/" /><meta property="og:image" content="https://cuglilong.github.io/logo.png"/><meta property="article:section" content="posts" />
+<meta property="article:published_time" content="2022-12-08T09:43:30+08:00" />
+<meta property="article:modified_time" content="2022-12-08T09:43:30+08:00" />
+
+<meta name="twitter:card" content="summary_large_image"/>
+<meta name="twitter:image" content="https://cuglilong.github.io/logo.png"/>
+
+<meta name="twitter:title" content="SEIS_FILO中文手册"/>
+<meta name="twitter:description" content=""/>
+<meta name="application-name" content="FixIt">
+<meta name="apple-mobile-web-app-title" content="FixIt"><meta name="theme-color" media="(prefers-color-scheme: light)" content="#ffffff"><meta name="theme-color" media="(prefers-color-scheme: dark)" content="#252627"><meta name="msapplication-TileColor" content="#da532c"><link rel="shortcut icon" type="image/x-icon" href="/favicon.ico" />
+    <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png"><link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png"><link rel="mask-icon" href="/safari-pinned-tab.svg" color="#5bbad5"><link rel="manifest" href="/site.webmanifest"><link rel="canonical" href="https://cuglilong.github.io/posts/2022-12-08-seisfil/2022-12-03-seisfilo-manual-zh/" /><link rel="prev" href="https://cuglilong.github.io/posts/2022-12-03-bayhunter/2022-12-03-bayhunter-manual-zh/" /><link rel="next" href="https://cuglilong.github.io/posts/2023-06-09-das/2023-06-09-das/" /><link rel="stylesheet" href="/lib/normalize/normalize.min.css"><link rel="stylesheet" href="/css/style.min.css"><link rel="stylesheet" href="/lib/fontawesome-free/all.min.css"><link rel="stylesheet" href="/lib/animate/animate.min.css"><script type="application/ld+json">
+  {
+    "@context": "http://schema.org",
+    "@type": "BlogPosting",
+    "headline": "SEIS_FILO中文手册",
+    "inLanguage": "zh-CN",
+    "mainEntityOfPage": {
+      "@type": "WebPage",
+      "@id": "https:\/\/cuglilong.github.io\/posts\/2022-12-08-seisfil\/2022-12-03-seisfilo-manual-zh\/"
+    },"genre": "posts","keywords": "draft","wordcount":  2120 ,
+    "url": "https:\/\/cuglilong.github.io\/posts\/2022-12-08-seisfil\/2022-12-03-seisfilo-manual-zh\/","datePublished": "2022-12-08T09:43:30+08:00","dateModified": "2022-12-08T09:43:30+08:00","publisher": {
+      "@type": "Organization",
+      "name": ""},"author": {
+        "@type": "Person",
+        "name": "cuglilong"
+      },"description": ""
+  }
+  </script></head>
+  <body header-desktop="" header-mobile=""><script type="text/javascript">(window.localStorage && localStorage.getItem('theme') ? localStorage.getItem('theme') === 'dark' : ('auto' === 'auto' ? window.matchMedia('(prefers-color-scheme: dark)').matches : 'auto' === 'dark')) && document.body.setAttribute('theme', 'dark');</script>
+
+    <div id="mask"></div><div class="wrapper"><header class="desktop" id="header-desktop">
+  <div class="header-wrapper">
+    <div class="header-title">
+      <a href="/" title="Long&#39;s blog"><span class="header-title-text">Long&#39;s blog</span></a></div>
+    <div class="menu">
+      <div class="menu-inner"><a class="menu-item" href="/posts/"> 文章 </a><a class="menu-item" href="/tags/"> 标签 </a><a class="menu-item" href="/categories/"> 分类 </a><span class="menu-item delimiter"></span><span class="menu-item search" id="search-desktop">
+            <input type="text" placeholder="搜索文章标题或内容 ..." id="search-input-desktop">
+            <a href="javascript:void(0);" class="search-button search-toggle" id="search-toggle-desktop" title="搜索">
+              <i class="fas fa-search fa-fw"></i>
+            </a>
+            <a href="javascript:void(0);" class="search-button search-clear" id="search-clear-desktop" title="清空">
+              <i class="fas fa-times-circle fa-fw"></i>
+            </a>
+            <span class="search-button search-loading" id="search-loading-desktop">
+              <i class="fas fa-spinner fa-fw fa-spin"></i>
+            </span>
+          </span><a href="javascript:void(0);" class="menu-item theme-switch" title="切换主题">
+          <i class="fas fa-adjust fa-fw"></i>
+        </a>
+      </div>
+    </div>
+  </div>
+</header><header class="mobile" id="header-mobile">
+  <div class="header-container">
+    <div class="header-wrapper">
+      <div class="header-title">
+        <a href="/" title="Long&#39;s blog"><span class="header-title-text">Long&#39;s blog</span></a></div>
+      <div class="menu-toggle" id="menu-toggle-mobile">
+        <span></span><span></span><span></span>
+      </div>
+    </div>
+    <div class="menu" id="menu-mobile"><div class="search-wrapper">
+          <div class="search mobile" id="search-mobile">
+            <input type="text" placeholder="搜索文章标题或内容 ..." id="search-input-mobile">
+            <a href="javascript:void(0);" class="search-button search-toggle" id="search-toggle-mobile" title="搜索">
+              <i class="fas fa-search fa-fw"></i>
+            </a>
+            <a href="javascript:void(0);" class="search-button search-clear" id="search-clear-mobile" title="清空">
+              <i class="fas fa-times-circle fa-fw"></i>
+            </a>
+            <span class="search-button search-loading" id="search-loading-mobile">
+              <i class="fas fa-spinner fa-fw fa-spin"></i>
+            </span>
+          </div>
+          <a href="javascript:void(0);" class="search-cancel" id="search-cancel-mobile">
+            取消
+          </a>
+        </div><a class="menu-item" href="/posts/" title="">文章</a><a class="menu-item" href="/tags/" title="">标签</a><a class="menu-item" href="/categories/" title="">分类</a><a href="javascript:void(0);" class="menu-item theme-switch" title="切换主题">
+        <i class="fas fa-adjust fa-fw"></i>
+      </a></div>
+  </div>
+</header>
+<div class="search-dropdown desktop">
+  <div id="search-dropdown-desktop"></div>
+</div>
+<div class="search-dropdown mobile">
+  <div id="search-dropdown-mobile"></div>
+</div>
+<main class="container" page-style="normal"><aside class="toc" id="toc-auto"><h2 class="toc-title">目录</h2>
+      <div class="toc-content" id="toc-content-auto"></div></aside>
+
+  <aside class="aside-custom">
+    
+  </aside>
+
+  <article class="page single"><h1 class="single-title animate__animated animate__flipInX">SEIS_FILO中文手册</h1><div class="post-meta">
+      <div class="post-meta-line"><span class="post-author"><a
+  href="/"
+  
+    title="Author"
+  
+  
+  
+    rel=" author"
+  
+  
+  
+    class=" author"
+  
+  
+><i class="fas fa-user-circle fa-fw"></i>cuglilong</a></span>&nbsp;<span class="post-category">收录于 <a href="/categories/draft/"><i class="far fa-folder fa-fw"></i>draft</a></span></div>
+      <div class="post-meta-line"><span title=2022-12-08&#32;09:43:30>
+            <i class="far fa-calendar-alt fa-fw"></i>&nbsp;<time datetime="2022-12-08" >2022-12-08</time>
+          </span>&nbsp;<i class="fas fa-pencil-alt fa-fw"></i>&nbsp;约 2120 字&nbsp;
+        <i class="far fa-clock fa-fw"></i>&nbsp;预计阅读 5 分钟&nbsp;<span id="busuanzi_container_page_pv" class="busuanzi_visitors" data-flag-title="SEIS_FILO中文手册">
+            <i class="far fa-eye fa-fw"></i>&nbsp;<span id="busuanzi_value_page_pv">-</span>&nbsp;次阅读
+          </span>&nbsp;</div>
+    </div><div class="details toc" id="toc-static" kept="false">
+        <div class="details-summary toc-title">
+          <span>目录</span>
+          <span><i class="details-icon fas fa-angle-right"></i></span>
+        </div>
+        <div class="details-content toc-content" id="toc-content-static"><nav id="TableOfContents">
+  <ul>
+    <li><a href="#一before-use">一、BEFORE USE</a>
+      <ul>
+        <li><a href="#overview">Overview</a></li>
+        <li><a href="#requirements">Requirements</a></li>
+        <li><a href="#install">Install</a></li>
+        <li><a href="#terms-of-use">Terms of use</a></li>
+      </ul>
+    </li>
+    <li><a href="#二how-to-use">二、HOW TO USE</a>
+      <ul>
+        <li><a href="#1-input-files">1 Input files</a></li>
+        <li><a href="#2-output-files">2 Output files</a></li>
+        <li><a href="#3-plot-utilitites">3 Plot utilitites</a></li>
+        <li><a href="#4-forwarad-calculation">4 Forwarad calculation</a></li>
+        <li><a href="#5-inversion-analysis">5 Inversion analysis</a></li>
+        <li><a href="#6-miscellaneous">6 Miscellaneous</a></li>
+      </ul>
+    </li>
+  </ul>
+</nav></div>
+      </div><div class="content" id="content"><p>SEIS_FILO : 基于McMC(马尔可夫链蒙特卡洛)跨维贝叶斯方法联合反演面波频散和接收函数</p>
+<h2 id="一before-use">一、BEFORE USE</h2>
+<h3 id="overview">Overview</h3>
+<p>地震学研究利用平面和各向同性层的分层来近似地描述地球的结构。这种一维模型适用于单站测量，包括接收函数和面波频散曲线，已被广泛应用于从浅盆地到深部地幔结构的广泛范围。近年来，越来越多的研究开始使用更复杂的方法(如全波形反演)来模拟地球横向非均匀结构。然而，由于计算成本较低，且不需要密集的地震仪器部署，一维结构建模将继续保持其地位。特别是在海洋区域，由于台站网络覆盖不足，只能采用单台站的方法。</p>
+<p>该程序包旨在对接收函数和面波频散曲线进行跨维反演，充分考虑海水柱的影响。最先进的贝叶斯概率抽样被称为可逆跳跃马尔可夫链蒙特卡洛，其中模型参数的数量(即层数)是根据数据复杂性自动选择的。同时还采用了平行回火技术来提高转化率。源代码是用现代的Fortran编程风格(即面向目标的编程)编写的，将来维护成本低且易于扩展。</p>
+<h3 id="requirements">Requirements</h3>
+<p>必须安装以下库</p>
+<ul>
+<li>
+<p>FFTW library</p>
+</li>
+<li>
+<p>LAPACK library</p>
+</li>
+</ul>
+<p>上述库的适当位置必须在src/Makefile中指定</p>
+<ul>
+<li>Open MPI</li>
+</ul>
+<p>MPI编译器必须链接到GNU Fortran编译器(即gfortran)。这些程序已被确认可以使用GNU Fortran编译器4.8.5版本工作。旧版本可能无法编译程序，因为代码包含了现代Fortran特性。</p>
+<p>Plot实用程序需要Python3和流行的模块，包括numpy、matplotlib、pandas和seaborn。有关所需模块的完整列表，请参阅requirements.txt。</p>
+<h3 id="install">Install</h3>
+<ul>
+<li>
+<p>Use make in the src directory.</p>
+</li>
+<li>
+<p>Executable files will be created under the bin directory.</p>
+</li>
+<li>
+<p>mpifort is required.</p>
+</li>
+<li>
+<p>It is recommended that mpifort is liked to the GNU compiler (i.e., gfortran). Otherwise, some modifications to compiler options are required in src/Makefile.</p>
+</li>
+</ul>
+<h3 id="terms-of-use">Terms of use</h3>
+<ul>
+<li>
+<p>Please clarify the URL of the GitHub repository (<a
+  href="https://github.com/akuhara/SEIS_FILO"
+  
+  
+    
+    target="_blank"
+  
+  
+    rel="external nofollow noopener noreffer"
+  
+  
+  
+  
+>https://github.com/akuhara/SEIS_FILO</a>) and the package name (SEIS_FILO) when you make any presentation or publish articles using this program. The example sentence is: This study uses a computer program SEIS_FILO, which is available at <a
+  href="https://github.com/akuhara/SEIS_FILO"
+  
+  
+    
+    target="_blank"
+  
+  
+    rel="external nofollow noopener noreffer"
+  
+  
+  
+  
+>https://github.com/akuhara/SEIS_FILO</a>.</p>
+</li>
+<li>
+<p>This program is licensed under the GNU General Public License v3.0.</p>
+</li>
+</ul>
+<h2 id="二how-to-use">二、HOW TO USE</h2>
+<h3 id="1-input-files">1 Input files</h3>
+<h6 id="11-overview-of-input-files">1.1 Overview of input files</h6>
+<p>Input files to SEIS_FILO&rsquo;s programs are categorized into three classes: (1) main parameter file, (2) data summary file, and (3) data file. The first one, the main parameter file, is a mandatory input to all programs (i.e., recv_func_fwd, disper_fwd, and joint_inv) and the filename must be provided as the first command-line argument. The user&rsquo;s choice of tuning parameters should be stated in this file. The other ones, the data summary file and the data file, are only required for inversion (i.e., joint_inv). The data summary file contains metadata of the input dataset and must be prepared separately for each receiver function and surface wave datasets. The filenames are passed to the program through the parameters recv_func_in and disper_in, which should appear in the main file. The data files store the input data. The filenames should appear in the data summary file.</p>
+<h6 id="12-main-parameter-file">1.2 Main parameter file</h6>
+<p>The main parameter file contains user&rsquo;s choice on tuning parameters. This filename must be passed to SEIS_FILO&rsquo;s programs as the first command-line argument. See parameter list for descriptions of each parameter.</p>
+<p><strong>EXAMPLE</strong></p>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-shell" data-lang="shell"><span class="line"><span class="cl">recv_func_fwd <span class="o">[</span>path to parameter file<span class="o">]</span>
+</span></span><span class="line"><span class="cl">disper_fwd <span class="o">[</span>path to parameter file<span class="o">]</span>
+</span></span><span class="line"><span class="cl">mpirun -np <span class="m">20</span> joint_inv <span class="o">[</span>path to parameter file<span class="o">]</span>
+</span></span></code></pre></div><p><strong>Format</strong></p>
+<ul>
+<li>Specify one parameter per line</li>
+<li>Parameter&rsquo;s name should be on the left side of &ldquo;=&rdquo; and the value on the right side</li>
+<li>Comment out by &ldquo;#&rdquo;</li>
+<li>Order insensitive</li>
+<li>Empty lines are just ignored</li>
+</ul>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-shell" data-lang="shell"><span class="line"><span class="cl"><span class="c1"># Snippet of the parameter file</span>
+</span></span><span class="line"><span class="cl"><span class="nv">n_iter</span> <span class="o">=</span> <span class="m">100000</span>
+</span></span><span class="line"><span class="cl"><span class="nv">n_chain</span> <span class="o">=</span> <span class="m">20</span>
+</span></span><span class="line"><span class="cl"><span class="c1"># The following lines give the same results.</span>
+</span></span><span class="line"><span class="cl"><span class="nv">n_burn</span> <span class="o">=</span> <span class="m">50000</span>
+</span></span><span class="line"><span class="cl">n_ bu <span class="nv">rn</span><span class="o">=</span> <span class="m">500</span> <span class="m">0</span> <span class="m">0</span>
+</span></span></code></pre></div><p><strong>Required parameters for disper_fwd</strong></p>
+<ul>
+<li>freq_or_period: dispersion measurement type (freq: dispersion curve as a function of frequency; period: as a function of period)</li>
+<li>xmin: minimum frequecny or period of dispersion curve (Hz or s)</li>
+<li>xmax: maximum frequency or period of dispersion curve (Hz or s)</li>
+<li>dx: freqeuncy or period interval of dispersion curve (Hz or s)</li>
+<li>cmin: minimum phase velocity for root search (km/s)</li>
+<li>cmax: maximum phase velocity for root search (km/s)</li>
+<li>dc: inverval of phase velocity (km/s)</li>
+<li>disper_phase: phase type (R: Rayleigh, L: Love)</li>
+<li>n_mode: mode number (n_mode &gt;= 0)</li>
+<li>vmod_in: filename for input velocity model</li>
+<li>disper_out: output filename</li>
+</ul>
+<p>NOTE</p>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-txt" data-lang="txt"><span class="line"><span class="cl">disper_phase = L (Love wave) is nut supported for current version.
+</span></span><span class="line"><span class="cl">When n_mode &lt; 0, full search mode is acctivated
+</span></span></code></pre></div><p><strong>Required parameters for recv_func_fwd</strong></p>
+<ul>
+<li>n_smp: number of samples in receiver function data</li>
+<li>delta: time interval of receiver function (s)</li>
+<li>rayp: ray parameter (s/km)</li>
+<li>a_gauss: Gaussian low-pass filter parameter</li>
+<li>t_pre: time before direct P arrival in receiver function (s)</li>
+<li>rf_phase: phase type (P: P-wave, S: S-wave)</li>
+<li>deconv_flag: whether deconvolved by Z component or not (T: with deconvolution, F: without deconvolution)</li>
+<li>correct_amp: amplitude correction to account for energy loss by filtering (T: with correction, F: without correction)</li>
+<li>damp: water-level damping factor</li>
+<li>vmod_in: filename for input velocity model</li>
+<li>recv_func_out: output filename</li>
+</ul>
+<p><strong>Required parameters for joint_inv</strong></p>
+<ul>
+<li>
+<p>recv_func_in : filename of receiver function data summary file</p>
+</li>
+<li>
+<p>disper_in: filename of dispersion curve data summary file</p>
+</li>
+<li>
+<p>solve_anomaly: solve for velocity anomaly (T) or aboslute velocity (F)</p>
+</li>
+<li>
+<p>ref_vmod_in: Filename of reference velocity model</p>
+</li>
+<li>
+<p>solve_vp: whether solve for Vp (T: solve Vp, F: not)</p>
+</li>
+<li>
+<p>solve_rf_sig: whether solve receiver function data error (T) or not (F)</p>
+</li>
+<li>
+<p>solve_disper_sig: whether solve dispersion curve data error (T) or not (F)</p>
+</li>
+<li>
+<p>is_sphere: Earth flattening is applied (T) or not (F).</p>
+</li>
+<li>
+<p>is_ocean: whether model includes ocean (T: with ocean layer, F: without ocean layer)</p>
+</li>
+<li>
+<p>ocean_thick: ocean layer thickness (only required when is_ocean=T)</p>
+</li>
+<li>
+<p>vp_bottom: Vp of bottom layer (km/s).</p>
+</li>
+<li>
+<p>vs_bottom: Vs of bottom layer (km/s).</p>
+</li>
+<li>
+<p>rho_bottom: Density of bottom layer (g/cm^3).</p>
+</li>
+<li>
+<p>n_iter: number of iterations</p>
+</li>
+<li>
+<p>n_burn: number of iterations for burn-in period</p>
+</li>
+<li>
+<p>n_corr: number of iterations each time before saving a model</p>
+</li>
+<li>
+<p>n_chain: number of MCMC chains per process</p>
+</li>
+<li>
+<p>n_cool: number of non-tempered MCMC chains per process</p>
+</li>
+<li>
+<p>temp_high: maximum temperature</p>
+</li>
+<li>
+<p>k_min: minimum number of layer interfaces</p>
+</li>
+<li>
+<p>k_max: maximum number of layer interfaces</p>
+</li>
+<li>
+<p>vp_min: minimum Vp (km/s)</p>
+</li>
+<li>
+<p>vp_max: maximum Vp (km/s)</p>
+</li>
+<li>
+<p>dvp_sig: Prior width for Vp anomaly (km/s)</p>
+</li>
+<li>
+<p>vs_min: minimum Vs (km/s).</p>
+</li>
+<li>
+<p>vs_max: maximum Vs (km/s).</p>
+</li>
+<li>
+<p>dvs_sig: Prior width for Vs anomaly (km/s)</p>
+</li>
+<li>
+<p>z_min: minimum interface depth (km)</p>
+</li>
+<li>
+<p>z_max: maximum interface depth (km)</p>
+</li>
+<li>
+<p>dev_vs: standard deviation of proposed Vs perturbation (km/s)</p>
+</li>
+<li>
+<p>dev_vp: standard deviation of proposed Vp perturbation (only required when solve_vp=T) (km/s).</p>
+</li>
+<li>
+<p>dev_z: standard deviation of proposed layer depth perturbation (km).</p>
+</li>
+<li>
+<p>n_bin_vs: number of Vs bin for display.</p>
+</li>
+<li>
+<p>n_bin_vp: number of Vp bin for display</p>
+</li>
+<li>
+<p>n_bin_z: number of depth bin for display.</p>
+</li>
+</ul>
+<h6 id="13-data-summary-file">1.3 Data summary file</h6>
+<p>The data summary file passes the summary of input data to the inversion program joint_inv. Different file formats are used for surface wave dispersion curves and receiver functions. The filename can be arbitrary, which are to be specified in main parameter file via the parameters disper_in and recv_func_in.</p>
+<p><strong>Surface wave dispersion curves</strong></p>
+<p>Format</p>
+<ul>
+<li>
+<p>Comment out by # is acceptable</p>
+</li>
+<li>
+<p>Empty lines are ignored.</p>
+</li>
+<li>
+<p>Line 1: n_disp (The number of data files)</p>
+</li>
+<li>
+<p>Line 2 and after: Summary of each data file (must be repeated n_disp times)</p>
+<ul>
+<li>
+<p>Line i: data file name</p>
+</li>
+<li>
+<p>Line ii: disper_phase, n_mode, freq_or_period</p>
+</li>
+<li>
+<p>Line iii: nx, xmin, dx</p>
+</li>
+<li>
+<p>Line iv: cmin, cmax, dc</p>
+</li>
+<li>
+<p>Line v: sig_c_min, sig_c_max, dev_sig_c</p>
+</li>
+<li>
+<p>Line vi: sig_u_min, sig_u_max, dev_sig_u</p>
+</li>
+<li>
+<p>Line vii: sig_hv_min, sig_hv_max, dev_sig_hv</p>
+</li>
+</ul>
+</li>
+</ul>
+<p><strong>Receiver functions</strong></p>
+<p>Format</p>
+<ul>
+<li>
+<p>Comment out by # is acceptable</p>
+</li>
+<li>
+<p>Empty lines are ignored.</p>
+</li>
+<li>
+<p>Line 1: n_rf (The number of data files)</p>
+</li>
+<li>
+<p>Line 2 and after: Summary of each data file (must be repeated n_rf times)</p>
+<ul>
+<li>
+<p>Line i: data file name</p>
+</li>
+<li>
+<p>Line ii: a_gauss, rayp, delta</p>
+</li>
+<li>
+<p>Line iii: rf_phase</p>
+</li>
+<li>
+<p>Line iv: t_start (start time of analysis window), t_end (end time of the analysis window)</p>
+</li>
+<li>
+<p>Line v: sig_rf_min, sig_rf_max, dev_sig_rf</p>
+</li>
+<li>
+<p>Line vi: deconv_flag, correct_amp, damp</p>
+</li>
+</ul>
+</li>
+</ul>
+<h6 id="14-data-file">1.4 Data file</h6>
+<p>The data file contains the input data for inversion. Two different formats are used for surface wave dispersion curves and receiver functions. The file name and detailed information about the data should appear in the <a
+  href=""
+  
+  
+  
+  
+  
+  
+>data summary files</a>.</p>
+<p><strong>Surface wave dispersion curves</strong></p>
+<p>FORMAT</p>
+<p>1st col.	2nd col.	3rd col.	4th col.	5th col.	6th col.
+Phase velocity (km/s)	Data availability (T or F)	Group velocity (km/s)	Data availability (T or F)	H/V ratio	Data availability (T or F)</p>
+<p>NOTE</p>
+<ul>
+<li>Ascending order is assumed in terms of frequency/period (the first line must contain measurements at xmin).</li>
+<li>Example is here.</li>
+</ul>
+<p><strong>Receiver functions</strong></p>
+<ul>
+<li>Use <a
+  href=""
+  
+  
+  
+  
+  
+  
+>SAC data file format</a></li>
+</ul>
+<h6 id="15-reference-velocity-file">1.5 Reference velocity file</h6>
+<p>When solving for velocity anomalies (solve_anomaly = T), you must pass a reference velocity model through this file. The filename can be arbitrary but needs to be specified in a main parameter file using the parameter v_ref_mod_in.</p>
+<p>Format</p>
+<p>1st column	2nd column	3rd column
+Depth (km)	Vp (km/s)	Vs (km/s)</p>
+<p>An example is <a
+  href=""
+  
+  
+  
+  
+  
+  
+>here</a>.</p>
+<p>NOTE</p>
+<ul>
+<li>
+<p>DEPTH INCREMENTS MUST BE CONSTANT.</p>
+</li>
+<li>
+<p>The part shallower than the seafloor is ignored. The inversion fixes the Vp of the ocean layer at value of the parameter vp_ocean (1.5 km/s by default).</p>
+</li>
+</ul>
+<h6 id="16-velocity-model-file">1.6 Velocity model file</h6>
+<p>This file describes the velocity model that is passed to the forward computation programs (i.e., disper_fwd and recv_func_fwd).</p>
+<p>Format</p>
+<ul>
+<li>Line 1: the number of layers (including seawater and half-space).</li>
+<li>Line 2 and after: Vp (km/s), Vs (km/s), density (g/cm^3), thickness (km)</li>
+</ul>
+<p>NOTE</p>
+<ul>
+<li>
+<p>For the ocean layer, set Vs to be lower than 0 (this is allowed only for the topmost layer).</p>
+</li>
+<li>
+<p>The thickness of the bottom layer (half-space) is not used.</p>
+</li>
+<li>
+<p>Empty lines are ignored.</p>
+</li>
+<li>
+<p>Comment out by &ldquo;#&rdquo; works fine.</p>
+</li>
+<li>
+<p>Example is <a
+  href=""
+  
+  
+  
+  
+  
+  
+>here</a>.</p>
+</li>
+</ul>
+<h6 id="17-parameter-list">1.7 Parameter list</h6>
+<p>SEIS_FILO&rsquo;s programs involve a number of tuning parameters. The complete list is given here. These parameters should appear in the main parameter file or data summary file.</p>
+<h3 id="2-output-files">2 Output files</h3>
+<h6 id="21-number-of-layers">2.1 Number of layers</h6>
+<p>Filename: n_layers.ppd</p>
+<p>Format:</p>
+<p>1st column	2nd column
+Number of layers	Probability</p>
+<h6 id="22-velocity-profile">2.2 Velocity profile</h6>
+<p>Filename: vs_z.ppd</p>
+<p>Format:</p>
+<p>1st column	2nd column	3rd column
+S wave velocity (km/s)	Depth (km)	Probability
+Filename: vp_z.ppd</p>
+<p>Format:</p>
+<p>1st column	2nd column	3rd column
+P wave velocity (km/s)	Depth (km)	Probability
+Filename: vs_z.mean</p>
+<p>Format:</p>
+<p>1st column	2nd column
+Mean S wave velocity (km/s)	Depth (km)
+Filename: vp_z.mean</p>
+<p>Format:</p>
+<p>1st column	2nd column
+Mean P wave velocity (km/s)	Depth (km)</p>
+<h6 id="23-dispersion-curve-ensemble">2.3 Dispersion Curve Ensemble</h6>
+<h6 id="24-receiver-function-ensemble">2.4 Receiver function ensemble</h6>
+<h6 id="25-standard-deviation-of-noise">2.5 Standard deviation of noise</h6>
+<h3 id="3-plot-utilitites">3 Plot utilitites</h3>
+<h3 id="4-forwarad-calculation">4 Forwarad calculation</h3>
+<h6 id="41-dispersion-curve">4.1 Dispersion curve</h6>
+<h6 id="42-receiver-functions">4.2 Receiver functions</h6>
+<h3 id="5-inversion-analysis">5 Inversion analysis</h3>
+<h6 id="51-model-parameters">5.1 Model parameters</h6>
+<h6 id="52-prior-porbability">5.2 Prior porbability</h6>
+<h6 id="53-mcmc-step">5.3 McMC step</h6>
+<h6 id="54-prallel-tempering">5.4 Prallel tempering</h6>
+<h3 id="6-miscellaneous">6 Miscellaneous</h3>
+<h6 id="61-receiver-function-amplitude">6.1 Receiver function amplitude</h6>
+<h6 id="62-verification">6.2 Verification</h6>
+<h6 id="63-spherical-earth-mode">6.3 Spherical Earth mode</h6>
+<h6 id="64-diagnostic-mode">6.4 Diagnostic mode</h6></div><div class="post-footer" id="post-footer">
+  <div class="post-info">
+    <div class="post-info-line">
+      <div class="post-info-mod">
+        <span title=2022-12-08&#32;09:43:30>更新于 2022-12-08</span>
+      </div>
+      <div class="post-info-license"></div>
+    </div>
+    <div class="post-info-line">
+      <div class="post-info-md"></div>
+      <div class="post-info-share">
+        <span></span>
+      </div>
+    </div>
+  </div>
+
+  <div class="post-info-more">
+    <section class="post-tags"><i class="fas fa-tags fa-fw"></i>&nbsp;<a href="/tags/draft/">draft</a></section>
+    <section>
+      <span><a href="javascript:void(0);" onclick="window.history.back();">返回</a></span>&nbsp;|&nbsp;<span><a href="/">主页</a></span>
+    </section>
+  </div>
+
+  <div class="post-nav"><a href="/posts/2022-12-03-bayhunter/2022-12-03-bayhunter-manual-zh/" class="prev" rel="prev" title="BayHunter中文手册"><i class="fas fa-angle-left fa-fw"></i>BayHunter中文手册</a>
+      <a href="/posts/2023-06-09-das/2023-06-09-das/" class="next" rel="next" title="分布式光纤地震仪(Distributed Acoustic Sensing, DAS)">分布式光纤地震仪(Distributed Acoustic Sensing, DAS)<i class="fas fa-angle-right fa-fw"></i></a></div>
+</div>
+</article></main><footer class="footer">
+    <div class="footer-container"><div class="footer-line powered">由 <a href="https://gohugo.io/" target="_blank" rel="external nofollow noopener noreffer" title="Hugo 0.107.0">Hugo</a> 强力驱动 | 主题 - <a href="https://github.com/Lruihao/FixIt" target="_blank" rel="external nofollow noopener noreffer" title="FixIt 0.2.13"><img class="fixit-icon" src="/images/fixit.svg" alt="FixIt logo" /> FixIt</a>
+        </div><div class="footer-line copyright"><i class="far fa-copyright fa-fw"></i><span itemprop="copyrightYear">2018 - 2023</span><span class="author" itemprop="copyrightHolder">
+              <a
+  href="/"
+  
+  
+  
+  
+  
+  
+>cuglilong</a></span><span class="footer-divider"></span><span class="license"><a rel="license external nofollow noopener noreffer" href="https://creativecommons.org/licenses/by-nc/4.0/" target="_blank">CC BY-NC 4.0</a></span></div><div class="footer-line ibruce">
+          <span id="busuanzi_container_site_uv" title=总访客数
+            ><i class="far fa-user"></i>
+            <span id="busuanzi_value_site_uv"
+              ><i class="fa fa-spinner fa-spin"></i
+            ></span
+          ></span><span id="busuanzi_container_site_pv" class="footer-divider" title=总访问量
+            ><i class="far fa-eye"></i>
+            <span id="busuanzi_value_site_pv"
+              ><i class="fa fa-spinner fa-spin"></i
+            ></span
+          ></span>
+        </div></div>
+  </footer></div>
+
+    <div id="fixed-buttons"><a href="#" id="back-to-top" class="fixed-button" title="回到顶部">
+        <i class="fas fa-arrow-up fa-fw"></i>
+      </a><a href="#" id="view-comments" class="fixed-button" title="查看评论">
+        <i class="fas fa-comment fa-fw"></i>
+      </a>
+    </div><link rel="stylesheet" href="/lib/katex/katex.min.css"><link rel="stylesheet" href="/lib/katex/copy-tex.min.css"><script type="text/javascript" src="/lib/autocomplete/autocomplete.min.js" defer></script><script type="text/javascript" src="/lib/lunr/lunr.min.js" defer></script><script type="text/javascript" src="/lib/lunr/lunr.stemmer.support.min.js" defer></script><script type="text/javascript" src="/lib/lunr/lunr.zh.min.js" defer></script><script type="text/javascript" src="/lib/lazysizes/lazysizes.min.js" async defer></script><script type="text/javascript" src="/lib/clipboard/clipboard.min.js" defer></script><script type="text/javascript" src="/lib/katex/katex.min.js" defer></script><script type="text/javascript" src="/lib/katex/auto-render.min.js" defer></script><script type="text/javascript" src="/lib/katex/copy-tex.min.js" defer></script><script type="text/javascript" src="/lib/katex/mhchem.min.js" defer></script><script type="text/javascript" src="//busuanzi.ibruce.info/busuanzi/2.3/busuanzi.pure.mini.js" async defer></script><script type="text/javascript">window.config={"code":{"copyTitle":"复制到剪贴板","editLockTitle":"锁定可编辑代码块","editUnLockTitle":"解锁可编辑代码块","editable":true,"maxShownLines":10},"comment":{},"enablePWA":true,"ibruce":{"enable":true,"siteTime":""},"math":{"delimiters":[{"display":true,"left":"$$","right":"$$"},{"display":true,"left":"\\[","right":"\\]"},{"display":false,"left":"$","right":"$"},{"display":false,"left":"\\(","right":"\\)"}],"strict":false},"search":{"highlightTag":"em","lunrIndexURL":"/index.json","lunrLanguageCode":"zh","lunrSegmentitURL":"/lib/lunr/lunr.segmentit.js","maxResultLength":10,"noResultsFound":"没有找到结果","snippetLength":50,"type":"lunr"}};</script><script type="text/javascript" src="/js/theme.min.js" defer></script></body>
+</html>

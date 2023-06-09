@@ -1,0 +1,703 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="robots" content="noodp" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge, chrome=1">
+    <title>BayHunter中文手册 - Long&#39;s blog</title><meta name="author" content="cuglilong: ">
+<meta name="description" content="Long blog" />
+<meta name="keywords" content="draft" /><meta itemprop="name" content="BayHunter中文手册">
+<meta itemprop="description" content=""><meta itemprop="datePublished" content="2022-12-03T16:42:51+08:00" />
+<meta itemprop="dateModified" content="2022-12-03T16:42:51+08:00" />
+<meta itemprop="wordCount" content="5281"><meta itemprop="image" content="https://cuglilong.github.io/logo.png"/>
+<meta itemprop="keywords" content="draft," /><meta property="og:title" content="BayHunter中文手册" />
+<meta property="og:description" content="" />
+<meta property="og:type" content="article" />
+<meta property="og:url" content="https://cuglilong.github.io/posts/2022-12-03-bayhunter/2022-12-03-bayhunter-manual-zh/" /><meta property="og:image" content="https://cuglilong.github.io/logo.png"/><meta property="article:section" content="posts" />
+<meta property="article:published_time" content="2022-12-03T16:42:51+08:00" />
+<meta property="article:modified_time" content="2022-12-03T16:42:51+08:00" />
+
+<meta name="twitter:card" content="summary_large_image"/>
+<meta name="twitter:image" content="https://cuglilong.github.io/logo.png"/>
+
+<meta name="twitter:title" content="BayHunter中文手册"/>
+<meta name="twitter:description" content=""/>
+<meta name="application-name" content="FixIt">
+<meta name="apple-mobile-web-app-title" content="FixIt"><meta name="theme-color" media="(prefers-color-scheme: light)" content="#ffffff"><meta name="theme-color" media="(prefers-color-scheme: dark)" content="#252627"><meta name="msapplication-TileColor" content="#da532c"><link rel="shortcut icon" type="image/x-icon" href="/favicon.ico" />
+    <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png"><link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png"><link rel="mask-icon" href="/safari-pinned-tab.svg" color="#5bbad5"><link rel="manifest" href="/site.webmanifest"><link rel="canonical" href="https://cuglilong.github.io/posts/2022-12-03-bayhunter/2022-12-03-bayhunter-manual-zh/" /><link rel="prev" href="https://cuglilong.github.io/posts/2022-10-16-learning-data-structure/" /><link rel="next" href="https://cuglilong.github.io/posts/2022-12-08-seisfil/2022-12-03-seisfilo-manual-zh/" /><link rel="stylesheet" href="/lib/normalize/normalize.min.css"><link rel="stylesheet" href="/css/style.min.css"><link rel="stylesheet" href="/lib/fontawesome-free/all.min.css"><link rel="stylesheet" href="/lib/animate/animate.min.css"><script type="application/ld+json">
+  {
+    "@context": "http://schema.org",
+    "@type": "BlogPosting",
+    "headline": "BayHunter中文手册",
+    "inLanguage": "zh-CN",
+    "mainEntityOfPage": {
+      "@type": "WebPage",
+      "@id": "https:\/\/cuglilong.github.io\/posts\/2022-12-03-bayhunter\/2022-12-03-bayhunter-manual-zh\/"
+    },"genre": "posts","keywords": "draft","wordcount":  5281 ,
+    "url": "https:\/\/cuglilong.github.io\/posts\/2022-12-03-bayhunter\/2022-12-03-bayhunter-manual-zh\/","datePublished": "2022-12-03T16:42:51+08:00","dateModified": "2022-12-03T16:42:51+08:00","publisher": {
+      "@type": "Organization",
+      "name": ""},"author": {
+        "@type": "Person",
+        "name": "ucaslilong"
+      },"description": ""
+  }
+  </script></head>
+  <body header-desktop="" header-mobile=""><script type="text/javascript">(window.localStorage && localStorage.getItem('theme') ? localStorage.getItem('theme') === 'dark' : ('auto' === 'auto' ? window.matchMedia('(prefers-color-scheme: dark)').matches : 'auto' === 'dark')) && document.body.setAttribute('theme', 'dark');</script>
+
+    <div id="mask"></div><div class="wrapper"><header class="desktop" id="header-desktop">
+  <div class="header-wrapper">
+    <div class="header-title">
+      <a href="/" title="Long&#39;s blog"><span class="header-title-text">Long&#39;s blog</span></a></div>
+    <div class="menu">
+      <div class="menu-inner"><a class="menu-item" href="/posts/"> 文章 </a><a class="menu-item" href="/tags/"> 标签 </a><a class="menu-item" href="/categories/"> 分类 </a><span class="menu-item delimiter"></span><span class="menu-item search" id="search-desktop">
+            <input type="text" placeholder="搜索文章标题或内容 ..." id="search-input-desktop">
+            <a href="javascript:void(0);" class="search-button search-toggle" id="search-toggle-desktop" title="搜索">
+              <i class="fas fa-search fa-fw"></i>
+            </a>
+            <a href="javascript:void(0);" class="search-button search-clear" id="search-clear-desktop" title="清空">
+              <i class="fas fa-times-circle fa-fw"></i>
+            </a>
+            <span class="search-button search-loading" id="search-loading-desktop">
+              <i class="fas fa-spinner fa-fw fa-spin"></i>
+            </span>
+          </span><a href="javascript:void(0);" class="menu-item theme-switch" title="切换主题">
+          <i class="fas fa-adjust fa-fw"></i>
+        </a>
+      </div>
+    </div>
+  </div>
+</header><header class="mobile" id="header-mobile">
+  <div class="header-container">
+    <div class="header-wrapper">
+      <div class="header-title">
+        <a href="/" title="Long&#39;s blog"><span class="header-title-text">Long&#39;s blog</span></a></div>
+      <div class="menu-toggle" id="menu-toggle-mobile">
+        <span></span><span></span><span></span>
+      </div>
+    </div>
+    <div class="menu" id="menu-mobile"><div class="search-wrapper">
+          <div class="search mobile" id="search-mobile">
+            <input type="text" placeholder="搜索文章标题或内容 ..." id="search-input-mobile">
+            <a href="javascript:void(0);" class="search-button search-toggle" id="search-toggle-mobile" title="搜索">
+              <i class="fas fa-search fa-fw"></i>
+            </a>
+            <a href="javascript:void(0);" class="search-button search-clear" id="search-clear-mobile" title="清空">
+              <i class="fas fa-times-circle fa-fw"></i>
+            </a>
+            <span class="search-button search-loading" id="search-loading-mobile">
+              <i class="fas fa-spinner fa-fw fa-spin"></i>
+            </span>
+          </div>
+          <a href="javascript:void(0);" class="search-cancel" id="search-cancel-mobile">
+            取消
+          </a>
+        </div><a class="menu-item" href="/posts/" title="">文章</a><a class="menu-item" href="/tags/" title="">标签</a><a class="menu-item" href="/categories/" title="">分类</a><a href="javascript:void(0);" class="menu-item theme-switch" title="切换主题">
+        <i class="fas fa-adjust fa-fw"></i>
+      </a></div>
+  </div>
+</header>
+<div class="search-dropdown desktop">
+  <div id="search-dropdown-desktop"></div>
+</div>
+<div class="search-dropdown mobile">
+  <div id="search-dropdown-mobile"></div>
+</div>
+<main class="container" page-style="normal"><aside class="toc" id="toc-auto"><h2 class="toc-title">目录</h2>
+      <div class="toc-content" id="toc-content-auto"></div></aside>
+
+  <aside class="aside-custom">
+    
+  </aside>
+
+  <article class="page single"><h1 class="single-title animate__animated animate__flipInX">BayHunter中文手册</h1><div class="post-meta">
+      <div class="post-meta-line"><span class="post-author"><a
+  href="/"
+  
+    title="Author"
+  
+  
+  
+    rel=" author"
+  
+  
+  
+    class=" author"
+  
+  
+><i class="fas fa-user-circle fa-fw"></i>ucaslilong</a></span>&nbsp;<span class="post-category">收录于 <a href="/categories/draft/"><i class="far fa-folder fa-fw"></i>draft</a></span></div>
+      <div class="post-meta-line"><span title=2022-12-03&#32;16:42:51>
+            <i class="far fa-calendar-alt fa-fw"></i>&nbsp;<time datetime="2022-12-03" >2022-12-03</time>
+          </span>&nbsp;<i class="fas fa-pencil-alt fa-fw"></i>&nbsp;约 5281 字&nbsp;
+        <i class="far fa-clock fa-fw"></i>&nbsp;预计阅读 11 分钟&nbsp;<span id="busuanzi_container_page_pv" class="busuanzi_visitors" data-flag-title="BayHunter中文手册">
+            <i class="far fa-eye fa-fw"></i>&nbsp;<span id="busuanzi_value_page_pv">-</span>&nbsp;次阅读
+          </span>&nbsp;</div>
+    </div><div class="details toc" id="toc-static" kept="false">
+        <div class="details-summary toc-title">
+          <span>目录</span>
+          <span><i class="details-icon fas fa-angle-right"></i></span>
+        </div>
+        <div class="details-content toc-content" id="toc-content-static"><nav id="TableOfContents">
+  <ul>
+    <li><a href="#1overview-概览">1）Overview 概览</a>
+      <ul>
+        <li><a href="#摘要">摘要</a></li>
+        <li><a href="#引用">引用</a></li>
+        <li><a href="#应用实例">应用实例</a></li>
+        <li><a href="#文档">文档</a></li>
+        <li><a href="#comments-and-feedback">Comments and Feedback</a></li>
+      </ul>
+    </li>
+    <li><a href="#2quickstart-快速开始">2）Quickstart 快速开始</a>
+      <ul>
+        <li><a href="#requirements建议版本">Requirements(建议版本)</a></li>
+        <li><a href="#modify">Modify</a></li>
+        <li><a href="#installation">Installation</a></li>
+        <li><a href="#resources">Resources</a></li>
+      </ul>
+    </li>
+    <li><a href="#一引言">一、引言</a>
+      <ul>
+        <li><a href="#11-bayes-theorem">1.1 Bayes theorem</a></li>
+        <li><a href="#12-markov-chain-monte-carlo">1.2 Markov chain Monte Carlo</a></li>
+      </ul>
+    </li>
+    <li><a href="#二算法">二、算法</a>
+      <ul>
+        <li><a href="#21-the-optimizer-and-chain-modules">2.1 The Optimizer and Chain modules</a></li>
+        <li><a href="#22-the-saving-and-plotting-modules">2.2 The Saving and Plotting modules</a></li>
+        <li><a href="#23-the-baywatch-module">2.3 The BayWatch module</a></li>
+      </ul>
+    </li>
+    <li><a href="#三tutorial">三、Tutorial</a>
+      <ul>
+        <li><a href="#requirements-and-installation">Requirements and installation</a></li>
+        <li><a href="#setting-up-and-running-and-inversion">Setting up and running and inversion</a></li>
+        <li><a href="#testing-with-synthetic-data">Testing with synthetic data</a></li>
+      </ul>
+    </li>
+    <li><a href="#四references">四、References</a>
+      <ul>
+        <li><a href="#inversion-example">Inversion example</a></li>
+        <li><a href="#estimation-of-r_rf">Estimation of $r_{RF}$</a></li>
+      </ul>
+    </li>
+    <li><a href="#五appendix">五、Appendix</a></li>
+    <li><a href="#六faqs">六、FAQs</a></li>
+  </ul>
+</nav></div>
+      </div><div class="content" id="content"><p>BayHunter : 基于McMC(马尔可夫链蒙特卡洛)跨维贝叶斯方法联合反演面波频散和接收函数</p>
+<h2 id="1overview-概览">1）Overview 概览</h2>
+<h3 id="摘要">摘要</h3>
+<p><strong>BayHunter</strong> 是一个基于Python语言对面波频散和/或接收函数进行马尔可夫链蒙特卡洛(McMC)跨维贝叶斯反演的开源工具。该算法遵循数据驱动的策略并解决速度-深度结构、模型层数、$V_P/V_S$比及噪声参数(例如数据噪声互相关及振幅)。程序包中同样提供了正演模拟代码，但很容易用自己的代码替换。程序包还可以添加其他(完全不同的)数据集(如ZH比?)。</p>
+<p><strong>BayWatch</strong> 模块可用于在反演过程中实时观察反演运行过程(如下面动画所展示)。这使得我们很容易看到每个链(chain)是如何搜索参数空间、数据是如何拟合、模型是如何变化、以及反演的方向是什么。</p>
+<!-- raw HTML omitted -->
+<!-- raw HTML omitted -->
+<p>Available on GitHub: <a
+  href="https://github.com/jenndrei/BayHunter"
+  
+  
+    
+    target="_blank"
+  
+  
+    rel="external nofollow noopener noreffer"
+  
+  
+  
+  
+>https://github.com/jenndrei/BayHunter</a></p>
+<h3 id="引用">引用</h3>
+<p>Dreiling, J., Tilmann, F. BayHunter – McMC transdimensional Bayesian inversion of receiver functions and surface wave dispersion. GFZ Data Services, 2019. <a
+  href="https://doi.org/10.5880/GFZ.2.4.2019.001"
+  
+  
+    
+    target="_blank"
+  
+  
+    rel="external nofollow noopener noreffer"
+  
+  
+  
+  
+>https://doi.org/10.5880/GFZ.2.4.2019.001</a>.</p>
+<h3 id="应用实例">应用实例</h3>
+<ul>
+<li>
+<p>Dreiling et al., 2020: Crustal structure of Sri Lanka derived from joint inversion of surface wave dispersion and receiver functions using a Bayesian approach. Journal of Geophysical Research: Solid Earth. <a
+  href="https://doi.org/10.1029/2019JB018688"
+  
+  
+    
+    target="_blank"
+  
+  
+    rel="external nofollow noopener noreffer"
+  
+  
+  
+  
+>https://doi.org/10.1029/2019JB018688</a>.</p>
+</li>
+<li>
+<p>Green et al., 2020: Magmatic and sedimentary structure beneath the Klyuchevskoy Volcanic Group, Kamchatka, from ambient noise tomography. Journal of Geophysical Research: Solid Earth. <a
+  href="https://doi.org/10.1029/2019JB018900"
+  
+  
+    
+    target="_blank"
+  
+  
+    rel="external nofollow noopener noreffer"
+  
+  
+  
+  
+>https://doi.org/10.1029/2019JB018900</a>.</p>
+</li>
+<li>
+<p>Mauerberger et al., n.a.: The multifaceted Scandinavian lithosphere imaged by surface waves and ambient noise. In preparation.</p>
+</li>
+</ul>
+<h3 id="文档">文档</h3>
+<p>BayHunter的文档包含三章，可通过导航菜单访问，并可下载为<a
+  href="https://github.com/jenndrei/BayHunter/blob/master/documentation/BayHunter_v2.1_documentation.pdf"
+  
+  
+    
+    target="_blank"
+  
+  
+    rel="external nofollow noopener noreffer"
+  
+  
+  
+  
+>PDF</a>格式.</p>
+<ul>
+<li>
+<p><strong>引言</strong>: 贝叶斯理论、McMC反演方法</p>
+</li>
+<li>
+<p><strong>算法</strong>: BayHunter背后的Python框架，包括优化器和链模块，保存和绘图选项，以及Baywatch</p>
+</li>
+<li>
+<p><strong>教程</strong>: 设置和运行反演，目标和参数，使用合成数据的反演实例(附录中代码的最简工作示例)</p>
+</li>
+</ul>
+<h3 id="comments-and-feedback">Comments and Feedback</h3>
+<p>BayHunter is ready to use. It is quick and efficient and I am happy with the performance. Still, there are always things that can be improved to make it even faster and more efficient, and user friendlier.</p>
+<p>Although we tested the software with a variety of synthetic and real data, each data set is still unique and shows own characteristics. If you observe any unforeseen behavior, please share it with me to wipe out(消除) possible problems we haven’t considered.</p>
+<p>I am happy to share my experience with you and also if you share your thoughts with me. I am looking forward to your feedback.</p>
+<h2 id="2quickstart-快速开始">2）Quickstart 快速开始</h2>
+<h3 id="requirements建议版本">Requirements(建议版本)</h3>
+<ul>
+<li>numpy&gt;=1.21.6</li>
+<li>scipy==1.7.3</li>
+<li>matplotlib==3.5.3</li>
+<li>pypdf2==2.11.1</li>
+<li>configobj==5.0.6</li>
+<li>pyzmq==24.0.1</li>
+<li>cython==0.29.32</li>
+</ul>
+<h3 id="modify">Modify</h3>
+<p>由于Github上<a
+  href="https://github.com/jenndrei/BayHunter.git"
+  
+  
+    
+    target="_blank"
+  
+  
+    rel="external nofollow noopener noreffer"
+  
+  
+  
+  
+>BayHunter源码</a>是基于python2开发的，而Python2已经停止更新，因此很有必要将代码更新为Python3版本，所以需要以下一些修改</p>
+<h6 id="1numpy版本问题">1.Numpy版本问题</h6>
+<ul>
+<li>BayHunter/src/Plotting.py</li>
+</ul>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-python" data-lang="python"><span class="line"><span class="cl"><span class="c1">## line 482 (modify)</span>
+</span></span><span class="line"><span class="cl"><span class="n">models2</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">array</span><span class="p">([</span><span class="n">model</span><span class="p">[</span><span class="o">~</span><span class="n">np</span><span class="o">.</span><span class="n">isnan</span><span class="p">(</span><span class="n">model</span><span class="p">)]</span> <span class="k">for</span> <span class="n">model</span> <span class="ow">in</span> <span class="n">models2</span><span class="p">],</span><span class="n">dtype</span><span class="o">=</span><span class="nb">object</span><span class="p">)</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl"><span class="c1">## line 483/484 (modify)</span>
+</span></span><span class="line"><span class="cl"><span class="n">yinterf</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">array</span><span class="p">([</span><span class="n">np</span><span class="o">.</span><span class="n">cumsum</span><span class="p">(</span><span class="n">model</span><span class="p">[</span><span class="nb">int</span><span class="p">(</span><span class="n">model</span><span class="o">.</span><span class="n">size</span><span class="o">/</span><span class="mi">2</span><span class="p">):</span><span class="o">-</span><span class="mi">1</span><span class="p">])</span>
+</span></span><span class="line"><span class="cl">                    <span class="k">for</span> <span class="n">model</span> <span class="ow">in</span> <span class="n">models2</span><span class="p">],</span><span class="n">dtype</span><span class="o">=</span><span class="nb">object</span><span class="p">)</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl"><span class="c1">## line 526 (modify)</span>
+</span></span><span class="line"><span class="cl"><span class="n">bins</span><span class="p">,</span> <span class="n">lay_bin</span><span class="p">,</span> <span class="n">_</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">array</span><span class="p">(</span><span class="n">data</span><span class="p">,</span><span class="n">dtype</span><span class="o">=</span><span class="nb">object</span><span class="p">)</span><span class="o">.</span><span class="n">T</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl"><span class="c1">## line 612 (modify)</span>
+</span></span><span class="line"><span class="cl"><span class="n">models</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">array</span><span class="p">([</span><span class="n">model</span><span class="p">[</span><span class="o">~</span><span class="n">np</span><span class="o">.</span><span class="n">isnan</span><span class="p">(</span><span class="n">model</span><span class="p">)]</span> <span class="k">for</span> <span class="n">model</span> <span class="ow">in</span> <span class="n">models</span><span class="p">],</span><span class="n">dtype</span><span class="o">=</span><span class="nb">object</span><span class="p">)</span>
+</span></span></code></pre></div><ul>
+<li>BayHunter/src/Models.py</li>
+</ul>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-python" data-lang="python"><span class="line"><span class="cl"><span class="c1">## line 205 (modify)</span>
+</span></span><span class="line"><span class="cl"><span class="n">bins</span><span class="p">,</span> <span class="n">vs_bin</span><span class="p">,</span> <span class="n">dep_bin</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">array</span><span class="p">(</span><span class="n">data</span><span class="p">,</span><span class="n">dtype</span><span class="o">=</span><span class="nb">object</span><span class="p">)</span><span class="o">.</span><span class="n">T</span>
+</span></span></code></pre></div><h6 id="2python编码中使用-dictkeys-时会报-typeerror-dict_keys-object-is-not-subscriptable-的错误">2.python编码中使用 dict.keys() 时，会报 TypeError: &lsquo;dict_keys&rsquo; object is not subscriptable 的错误</h6>
+<ul>
+<li>BayHunter/src/rfmini_modrf.py</li>
+</ul>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-python" data-lang="python"><span class="line"><span class="cl"><span class="c1">## line 75</span>
+</span></span><span class="line"><span class="cl"><span class="n">pars</span> <span class="o">=</span> <span class="n">mparams</span><span class="o">.</span><span class="n">keys</span><span class="p">()</span>
+</span></span><span class="line"><span class="cl"><span class="c1">## line 76(add)</span>
+</span></span><span class="line"><span class="cl"><span class="n">pars</span> <span class="o">=</span> <span class="nb">list</span><span class="p">(</span><span class="n">pars</span><span class="p">)</span>       <span class="c1">#!20210621</span>
+</span></span></code></pre></div><h6 id="3语句缺少">3.语句缺少</h6>
+<ul>
+<li>BayHunter/tutorial/create_testdata.py</li>
+</ul>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-python" data-lang="python"><span class="line"><span class="cl"><span class="c1">## line 2 (add)</span>
+</span></span><span class="line"><span class="cl"><span class="kn">import</span> <span class="nn">os</span>
+</span></span><span class="line"><span class="cl"><span class="o">......</span>
+</span></span><span class="line"><span class="cl"><span class="o">......</span>
+</span></span><span class="line"><span class="cl"><span class="c1">## line 20</span>
+</span></span><span class="line"><span class="cl"><span class="n">path</span> <span class="o">=</span> <span class="s1">&#39;observed&#39;</span>
+</span></span><span class="line"><span class="cl"><span class="c1">## line 21 (add)</span>
+</span></span><span class="line"><span class="cl"><span class="n">os</span><span class="o">.</span><span class="n">makedirs</span><span class="p">(</span><span class="n">path</span><span class="p">,</span><span class="n">exist_ok</span><span class="o">=</span><span class="kc">True</span><span class="p">)</span>
+</span></span></code></pre></div><h6 id="4python2改为python3">4.Python2改为Python3</h6>
+<ul>
+<li>BayHunter/tutorial/tutorial.py</li>
+</ul>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-python" data-lang="python"><span class="line"><span class="cl"><span class="c1">## line 80 (modify)</span>
+</span></span><span class="line"><span class="cl"><span class="nb">print</span><span class="p">(</span><span class="n">truenoise</span><span class="p">,</span> <span class="n">explike</span><span class="p">)</span>
+</span></span></code></pre></div><h3 id="installation">Installation</h3>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-shell" data-lang="shell"><span class="line"><span class="cl"><span class="c1"># 1.下载BayHunter源码</span>
+</span></span><span class="line"><span class="cl">git clone https://github.com/jenndrei/BayHunter.git
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl"><span class="c1"># 2.创建虚拟环境</span>
+</span></span><span class="line"><span class="cl"><span class="nb">cd</span> BayHunter
+</span></span><span class="line"><span class="cl"><span class="c1">## Create a new conda environment</span>
+</span></span><span class="line"><span class="cl">conda create -n bh37 <span class="nv">python</span><span class="o">=</span>3.7 
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl"><span class="c1"># 3.激活虚拟环境并安装依赖包</span>
+</span></span><span class="line"><span class="cl"><span class="c1">## source activate bh2</span>
+</span></span><span class="line"><span class="cl">conda activate bh37
+</span></span><span class="line"><span class="cl"><span class="c1">## install packages (建议版本)</span>
+</span></span><span class="line"><span class="cl">conda install <span class="nv">numpy</span><span class="o">==</span>1.21.6 <span class="nv">scipy</span><span class="o">==</span>1.7.3 <span class="nv">matplotlib</span><span class="o">==</span>3.5.3 <span class="nv">pypdf2</span><span class="o">==</span>2.11.1 <span class="nv">configobj</span><span class="o">==</span>5.0.6 <span class="nv">pyzmq</span><span class="o">==</span>24.0.1 <span class="nv">cython</span><span class="o">==</span>0.29.32
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl"><span class="c1">## or </span>
+</span></span><span class="line"><span class="cl">conda install numpy scipy matplotlib pypdf2 configobj pyzmq cython
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl"><span class="c1"># 3.安装BayHunter</span>
+</span></span><span class="line"><span class="cl"><span class="c1">## Bayhunter installation (in the BayHunter repository) </span>
+</span></span><span class="line"><span class="cl">python setup.py install
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl"><span class="c1"># 4.测试是否安装成功</span>
+</span></span><span class="line"><span class="cl"><span class="c1">## Check the successful installation of the surf96 routine</span>
+</span></span><span class="line"><span class="cl">python bayhunter_test_surf96.py
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl"><span class="c1">## 5.联合反演实例</span>
+</span></span><span class="line"><span class="cl"><span class="c1">### 5.1 生成测试数据</span>
+</span></span><span class="line"><span class="cl">python create_testdata.py
+</span></span><span class="line"><span class="cl"><span class="c1">### 5.2 载入RF</span>
+</span></span><span class="line"><span class="cl">python estimate_rRF.py
+</span></span><span class="line"><span class="cl"><span class="c1">### 5.3 联合反演</span>
+</span></span><span class="line"><span class="cl">python tutorialhunt.py
+</span></span><span class="line"><span class="cl"><span class="c1">### 5.4 同时开启Baywatch模块</span>
+</span></span><span class="line"><span class="cl">conda activate bh37
+</span></span><span class="line"><span class="cl">baywacth .
+</span></span></code></pre></div><h3 id="resources">Resources</h3>
+<ul>
+<li>
+<p>算法: 基于<a
+  href="https://jenndrei.github.io/BayHunter/references.html"
+  
+  
+    
+    target="_blank"
+  
+  
+    rel="external nofollow noopener noreffer"
+  
+  
+  
+  
+>Bodin et al., 2012</a>的工作</p>
+</li>
+<li>
+<p>面波频散正演模拟: <code>SURF96</code>源于CPS330(<a
+  href="https://jenndrei.github.io/BayHunter/references.html"
+  
+  
+    
+    target="_blank"
+  
+  
+    rel="external nofollow noopener noreffer"
+  
+  
+  
+  
+>Herrmann and Ammon, 2002</a>). 使用Python包装器 <a
+  href="https://github.com/miili/pysurf96"
+  
+  
+    
+    target="_blank"
+  
+  
+    rel="external nofollow noopener noreffer"
+  
+  
+  
+  
+>pysurf96</a> 及 <a
+  href="https://github.com/caiweicaiwei/SurfTomo"
+  
+  
+    
+    target="_blank"
+  
+  
+    rel="external nofollow noopener noreffer"
+  
+  
+  
+  
+>SurfTomo</a>.</p>
+</li>
+<li>
+<p>接收函数正演模拟: <code>rfmini</code> (<a
+  href="https://www.gfz-potsdam.de/en/staff/joachim-saul/"
+  
+  
+    
+    target="_blank"
+  
+  
+    rel="external nofollow noopener noreffer"
+  
+  
+  
+  
+>Joachim Saul, GFZ</a>).</p>
+</li>
+</ul>
+<h2 id="一引言">一、引言</h2>
+<p>贝叶斯反演近年来越来越受欢迎，与传统的优化方法相比，贝叶斯反演具有许多优点。其他方法往往约束更大，更倾向于基于最小失配的最佳模型，而贝叶斯定理后的反演基于模型的似然性，得到模型各参数的概率分布。反演结果由与数据和所选模型先验一致的模型集合(后验分布)表示。它们对解空间进行成像，揭示了模型参数的不确定性和权衡。</p>
+<p>利用马尔可夫链蒙特卡罗(McMC)采样算法进行贝叶斯后SWD和RF联合反演，并求解速度-深度结构、层数、噪声参数和平均地壳 $V_P/V_S$ 比，目前还没有合适的开源工具。所以处理这个问题是很自然的。为此，我们开发了BayHunter和BayWatch模块，该模块允许在运行时直播反转。</p>
+<h3 id="11-bayes-theorem">1.1 Bayes theorem</h3>
+<p>贝叶斯定理(Bayes, 1763)是基于条件逆概率之间的关系。假设观测数据𝑑𝑜𝑏𝑠，模型𝑚;我们观察到的概率𝑑𝑜𝑏𝑠给定𝑚𝑝(𝑑𝑜𝑏𝑠|𝑚),和概率𝑚给定𝑑𝑜𝑏𝑠是𝑝(𝑚|𝑑𝑜𝑏𝑠)。这两种情况也依赖于𝑚或𝑑𝑜𝑏𝑠被给出的概率，即𝑝(𝑚)和𝑝(𝑑𝑜𝑏𝑠)。</p>
+<p>两个事件发生的条件逆概率由:sss</p>
+<h3 id="12-markov-chain-monte-carlo">1.2 Markov chain Monte Carlo</h3>
+<p>马尔可夫链蒙特卡洛描述了一种从概率分布中采样的算法。该算法是随机抽样方法蒙特卡洛和马尔可夫链的结合，假设当前样本和前一个样本之间存在依赖关系。关于算法的具体实现，请参见算法部分。</p>
+<h2 id="二算法">二、算法</h2>
+<p><strong>BayHunter</strong> 是一个对面波频散(SWD)和接收函数(RF)进行马尔可夫链蒙特卡洛(McMC)跨维贝叶斯反演的工具，其能解决模型的速度-深度结构、层数、噪声尺度参数(互相关、大小)及地壳平均$V_p/V_S$。反演算法使用多个独立的马尔可夫链及蒙特卡洛随机采样方法来寻找最有可能(最似然)的模型。</p>
+<p><img
+    class="lazyload"
+    src="/svg/loading.min.svg"
+    data-src="bayhunt_flowchart.png"
+    data-srcset="bayhunt_flowchart.png, bayhunt_flowchart.png 1.5x, bayhunt_flowchart.png 2x"
+    data-sizes="auto"
+    alt="bayhunt_flowchart.png"
+    title="avatar" /></p>
+<p>图3 一个McMC链对参数空间采样的工作流程示意图。后验分布包括经过一定次数迭代后的链的所有接受的模型</p>
+<p>每个链在参数空间中是如何采样(发展)的如图3所示。每个链包含一个当前模型(current model)。在每次迭代中，通过考虑建议分布(proposal distribution)对当前模型进行修改，将提出一个新的模型(new model)。接受概率(acceptance probability)是基于从建议模型(proposal model)到当前模型(current model)的先验(prior)、建议(proposal)和后验(posterior)比计算的。提出的模型以接受概率(acceptance probability)被接受，即如果提出模型(proposed model)的可能性大于当前模型(current model)的可能性，则被接受;但也有一些比当前模型(current model)可能性小的模型以小概率被接受，这防止了链陷入局部极大值。如果建议模型(proposal model)被接受，它将取代当前模型(current model);如果不被接受，建议模型(proposal model)将被拒绝，当前模型(current model)将保持不变。此过程将重复进行指定次数的迭代。搜索阶段每个被接受模型(accepted model)都有助于参数的后验分布。</p>
+<p>下面给出的方程被简化为 <strong>BayHunter</strong> 中所需要的方程的数量，并不会完全推导出来。有关数学推导和细节可参考<a
+  href="https://jenndrei.github.io/BayHunter/references.html"
+  
+  
+    
+    target="_blank"
+  
+  
+    rel="external nofollow noopener noreffer"
+  
+  
+  
+  
+>Bodin(2010)</a>和<a
+  href="https://jenndrei.github.io/BayHunter/references.html"
+  
+  
+    
+    target="_blank"
+  
+  
+    rel="external nofollow noopener noreffer"
+  
+  
+  
+  
+>Bodin等人(2012)</a>，他们启发了BayHunter的想法，我们的算法也基于此。</p>
+<h3 id="21-the-optimizer-and-chain-modules">2.1 The Optimizer and Chain modules</h3>
+<p>The <em>BayHunter.mcmcOptimizer</em> manages the chains in an overarching module. It starts each single chain’s inversion and schedules the parallel computing. Each chain and its complete model data can be accessed (in the Python environment) after the inversion has finished. Before the optimizer initializes the chains, a configuration file will automatically be saved, which simplifies the process of illustrating results after an inversion.</p>
+<p><em>BayHunter.mcmcOptimizer</em> 在一个拱形模块中管理链。它启动每个单链的反演，并安排并行计算。在反演完成后，可以访问每个链及其完整的模型数据(在Python环境中)。在优化器初始化链之前，会自动保存一个配置文件，这简化了反演后显示结果的过程。</p>
+<p>Each <em>BayHunter.SingleChain</em> explores the parameter space independently and collects samples by following Bayes theorem (Eq. (1)). A chain has multiple tasks, which are described below in detail and begin with the random initialization of a starting model.</p>
+<p>每个<em>BayHunter.SingleChain</em>独立探索参数空间，并遵循贝叶斯定理(Eq.(1))收集样本。一个链有多个任务，下面将详细描述这些任务，并从一个启动模型的随机初始化开始。</p>
+<h6 id="211-initialize-the-targets">2.1.1 Initialize the targets</h6>
+<p>实现反演的第一步是定义目标。因此，用户需要将观察到的数据传递给指定的BayHunter目标类型。</p>
+<p>对于面波频散，周期-速度观测值必须分配给处理相应数据的类(<em>rayleighdistribusionphase</em>, <em>rayleighdistribusiongroup</em>, <em>lovedistribusionphase</em>, <em>lovedistribusiongroup</em>)。它们默认进入基本波浪模式。此外，不确定性可以归因，这稍后控制每个时期的权重。</p>
+<p>对于接收函数，观测到的时间-振幅数据必须分配给<em>BayHunter.Targets</em>中的<em>PReceiverFunction</em>(或<em>SReceiverFunction</em>)类。如果默认值与用于接收函数计算的值不同，则应更新正演模拟的参数(高斯滤波器宽度、慢度、水准量、近地表速度)。</p>
+<p>每个目标类都附带一个正演模拟插件，这很容易交换。对于面波，预先安装了一个基于<code>SURF96</code> <a
+  href="https://jenndrei.github.io/BayHunter/references.html"
+  
+  
+    
+    target="_blank"
+  
+  
+    rel="external nofollow noopener noreffer"
+  
+  
+  
+  
+>(Herrmann和Ammon, 2002)</a>的快速Fortran例程。对于接收函数，预安装的例程基于<code>rfmini </code><a
+  href="https://www.gfz-potsdam.de/en/staff/joachim-saul/"
+  
+  
+    
+    target="_blank"
+  
+  
+    rel="external nofollow noopener noreffer"
+  
+  
+  
+  
+>(Joachim Saul, GFZ)</a>。还可以定义其他目标。</p>
+<h6 id="212-parametrization-of-the-model-模型参数化">2.1.2 Parametrization of the model (模型参数化)</h6>
+<p>模型包括速度-深度结构、观测数据噪声参数</p>
+<ul>
+<li>
+<p>速度-深度结构</p>
+</li>
+<li>
+<p>数据噪声协方差矩阵</p>
+</li>
+</ul>
+<h6 id="213-initialize-a-model-模型初始化">2.1.3 Initialize a model (模型初始化)</h6>
+<p>对于每个链，初始模型参数(起始模型)是从均匀先验分布中提取的。对于速度-深度结构，它们是VS、深度、层数和平均地壳VP/VS的分布。初始模型的层数等于相应先验分布的最小值。如果设置为0，将绘制一个半空间模型，如果设置为1，半空间模型上的一层表示初始模型，以此类推。初始层数决定了将绘制多少Voronoi核，也就是VS和深度有多少对。如果绘制了速度-深度模型，VP将根据VP/VS计算，VP/VS是迄今绘制的，或者是用户给出的常数。如果合适，用户可能希望选择一个特定于地幔的VP/VS，也假设一个VS来区分地幔和地壳。密度计算方法为𝜌=0.77+0.32𝑉𝑃(Berteussen, 1977)。</p>
+<p>可以给出单个界面深度的估计(可以是任何界面，例如莫霍面)。估算值包括界面深度的平均值和标准差。当初始化一个模型时——只有给出了一个估计值——根据给定的正态分布绘制一个界面深度，两个核将被放置在与界面等距的位置。如果初始模型只包含半空间，则忽略接口估计。给出一个估计可以帮助链更快地收敛，例如，在计算能力有限的情况下，但可能会产生有偏差的后验分布。</p>
+<p>每个目标有两个噪声尺度参数(𝑟，𝜎)。用户需要定义总体目标类型(overarching target type)的先验分布，即SWD和RF，然而，每个目标将采样自己的后验分布。在反演过程中，单个噪声参数也可以通过给出单个数字而不是一个范围来设置为常数。初始值是给定的数字，并且/或将从先前的范围中提取。</p>
+<p>绘制的初始模型自动被分配为链的当前模型。计算相应的似然。此模型也是为burn-in阶段收集的模型链中的第一个模型。</p>
+<h6 id="214-computation-of-model-likelihood-模型似然计算">2.1.4 Computation of model likelihood (模型似然计算)</h6>
+<p>似然(likelihood)是对在 特定模型𝑚 下观测到 测量数据(<em>d</em>) 的概率的估计。它是接受和拒绝提议模型(proposal models)的重要手段。似然函数为:</p>
+<p>$$p(d_{obs}|m)=\frac{1}{\sqrt{(2\pi)(|C_{e}|)}}\times exp{\frac{-\Phi(m)}{2}}\tag{5}$$</p>
+<p>其中$\Phi(m)$为马氏距离(Mahalanobis distance)<a
+  href="https://jenndrei.github.io/BayHunter/references.html"
+  
+  
+    
+    target="_blank"
+  
+  
+    rel="external nofollow noopener noreffer"
+  
+  
+  
+  
+>(Mahalanobis, 1936)</a>，即观测数据$d_{obs}$和估计数据矢量$g(m)$之间的多维距离:</p>
+<p>$$\Phi(m)=(g(m)-d_{obs})^{T} C_{e}^{-1}(g(m)-d_{obs})\tag{6}$$</p>
+<p>考虑到似然值通常数值很小，偏向于对其进行取对数</p>
+<p>$$log p(d_{obs}|m)=-\frac{n}{2} log(2\pi) - \frac{1}{2} log(|C_{obs}|) - \frac{\Phi(m)}{2}\tag{7}$$</p>
+<h6 id="215-propose-a-model-提出一个新模型">2.1.5 Propose a model (提出一个新模型)</h6>
+<p>(1)修改$V_s$(泰森核)</p>
+<p>(2)修改深度h(泰森核)</p>
+<p>(3)修改地壳$V_{P}/V_{S}$</p>
+<p>(4)修改噪声参数$(r,\sigma)$</p>
+<p>(5)修改维度(增加层数)</p>
+<p>(6)修改维度(减少层数)</p>
+<p>除了(4)以外的每种方法都会改变速度-深度($V_{S}-h$)结构。</p>
+<p>对于(1)和(2)从当前模型中随机挑选一个泰森核。对于(1)根据$V_{S}$的建议分布更改泰森核的$V_{S}$，因此，从这个正态分布(以零为中心)中抽取一个样本，并将其添加到泰森核当前的$V_{S}$值中。对于(2)，从深度($h$)建议分布中抽取一个样本，并将其添加到泰森核深度($h$)坐标中。</p>
+<p>对于(3)，如果不是常数，从$V_{P}/V_{S}$建议分布中抽取一个样本，并将其添加到当前模型的$V_{P}/V_{S}$值中。
+对于(4)，从一个目标(𝑟或𝜎)中选择一个随机噪声参数。如果这个参数不是常数，则根据前面的过程和它自己的建议分布进行修改。𝐶𝑒对面波频散的假设是基于指数定律的。对于接收函数，只有当用户想对𝑟求倒数时，才假定指数定律。如果𝑟由一个常数给出，则自动考虑高斯相关定律。</p>
+<p>对于(5)和(6)，建议分布是相同的。
+对于(5)，一个随机的深度值将从均匀的深度先验分布中提取，在那里一个新的Voronoi核将会诞生。该核的新速度将由当前模型在绘制深度处的速度计算，并经过建议分布的修改。
+对于(6)，从当前模型的泰森核集合中随机选取一个核进行剔除。在这里，建议分布只与接受概率的计算有关，与模型的实际修改无关</p>
+<p>对于这六种修改的方法</p>
+<p>建议分布的初始宽度</p>
+<p>作为<strong>BayHunter</strong>的一个特征</p>
+<h6 id="216-accept-a-model-接受一个模型">2.1.6 Accept a model (接受一个模型)</h6>
+<p>在提出一个模型之后，需要将其与当前模型进行比较。因此，计算接受概率𝛼。如果所提模型的任何参数不在其先验分布范围内，则接受概率降为零，模型将自动被拒绝。只有当模型参数的当前值非常接近先验极限或其建议分布宽度非常大时，该模型参数才能位于先验之外。通过设置𝛼= 0，强制建议模型(proposal model)被拒绝的进一步标准:</p>
+<ul>
+<li>
+<p>层厚小于$thick_{min}$</p>
+</li>
+<li>
+<p>低速/高速区域不满足用户定义的约束</p>
+</li>
+</ul>
+<p>$$\alpha = prior ratio \times likelihood ratio \times proposal ratio \times Jacobian$$</p>
+<p>$$\alpha(m^{&rsquo;}|m) = \frac{p(m^{&rsquo;})}{p(m)} \times \frac{p(d_{obs}|m^{&rsquo;})}{p(d_{obs}|m)} \times \frac{q(m|m^{&rsquo;})}{q(m^{&rsquo;}|m)} \times |J| $$</p>
+<p>(1) Voronoi nucleus position, VP/VS , and covariance matrix</p>
+<p>(2) Dimension change of velocity-depth model</p>
+<h6 id="217-the-posterior-distribution-后验分布">2.1.7 The posterior distribution (后验分布)</h6>
+<h3 id="22-the-saving-and-plotting-modules">2.2 The Saving and Plotting modules</h3>
+<h6 id="outlier-detection">Outlier detection</h6>
+<h6 id="final-posterior-distribution">Final posterior distribution</h6>
+<h6 id="plotting-methods">Plotting methods</h6>
+<h3 id="23-the-baywatch-module">2.3 The BayWatch module</h3>
+<h2 id="三tutorial">三、Tutorial</h2>
+<h3 id="requirements-and-installation">Requirements and installation</h3>
+<h3 id="setting-up-and-running-and-inversion">Setting up and running and inversion</h3>
+<h6 id="setting-up-the-targets">Setting up the targets</h6>
+<h6 id="setting-up-parameters">Setting up parameters</h6>
+<h3 id="testing-with-synthetic-data">Testing with synthetic data</h3>
+<h2 id="四references">四、References</h2>
+<h3 id="inversion-example">Inversion example</h3>
+<h3 id="estimation-of-r_rf">Estimation of $r_{RF}$</h3>
+<h2 id="五appendix">五、Appendix</h2>
+<h2 id="六faqs">六、FAQs</h2></div><div class="post-footer" id="post-footer">
+  <div class="post-info">
+    <div class="post-info-line">
+      <div class="post-info-mod">
+        <span title=2022-12-03&#32;16:42:51>更新于 2022-12-03</span>
+      </div>
+      <div class="post-info-license"></div>
+    </div>
+    <div class="post-info-line">
+      <div class="post-info-md"></div>
+      <div class="post-info-share">
+        <span></span>
+      </div>
+    </div>
+  </div>
+
+  <div class="post-info-more">
+    <section class="post-tags"><i class="fas fa-tags fa-fw"></i>&nbsp;<a href="/tags/draft/">draft</a></section>
+    <section>
+      <span><a href="javascript:void(0);" onclick="window.history.back();">返回</a></span>&nbsp;|&nbsp;<span><a href="/">主页</a></span>
+    </section>
+  </div>
+
+  <div class="post-nav"><a href="/posts/2022-10-16-learning-data-structure/" class="prev" rel="prev" title="数据结构与算法笔记"><i class="fas fa-angle-left fa-fw"></i>数据结构与算法笔记</a>
+      <a href="/posts/2022-12-08-seisfil/2022-12-03-seisfilo-manual-zh/" class="next" rel="next" title="SEIS_FILO中文手册">SEIS_FILO中文手册<i class="fas fa-angle-right fa-fw"></i></a></div>
+</div>
+</article></main><footer class="footer">
+    <div class="footer-container"><div class="footer-line powered">由 <a href="https://gohugo.io/" target="_blank" rel="external nofollow noopener noreffer" title="Hugo 0.107.0">Hugo</a> 强力驱动 | 主题 - <a href="https://github.com/Lruihao/FixIt" target="_blank" rel="external nofollow noopener noreffer" title="FixIt 0.2.13"><img class="fixit-icon" src="/images/fixit.svg" alt="FixIt logo" /> FixIt</a>
+        </div><div class="footer-line copyright"><i class="far fa-copyright fa-fw"></i><span itemprop="copyrightYear">2018 - 2023</span><span class="author" itemprop="copyrightHolder">
+              <a
+  href="/"
+  
+  
+  
+  
+  
+  
+>cuglilong</a></span><span class="footer-divider"></span><span class="license"><a rel="license external nofollow noopener noreffer" href="https://creativecommons.org/licenses/by-nc/4.0/" target="_blank">CC BY-NC 4.0</a></span></div><div class="footer-line ibruce">
+          <span id="busuanzi_container_site_uv" title=总访客数
+            ><i class="far fa-user"></i>
+            <span id="busuanzi_value_site_uv"
+              ><i class="fa fa-spinner fa-spin"></i
+            ></span
+          ></span><span id="busuanzi_container_site_pv" class="footer-divider" title=总访问量
+            ><i class="far fa-eye"></i>
+            <span id="busuanzi_value_site_pv"
+              ><i class="fa fa-spinner fa-spin"></i
+            ></span
+          ></span>
+        </div></div>
+  </footer></div>
+
+    <div id="fixed-buttons"><a href="#" id="back-to-top" class="fixed-button" title="回到顶部">
+        <i class="fas fa-arrow-up fa-fw"></i>
+      </a><a href="#" id="view-comments" class="fixed-button" title="查看评论">
+        <i class="fas fa-comment fa-fw"></i>
+      </a>
+    </div><link rel="stylesheet" href="/lib/katex/katex.min.css"><link rel="stylesheet" href="/lib/katex/copy-tex.min.css"><script type="text/javascript" src="/lib/autocomplete/autocomplete.min.js" defer></script><script type="text/javascript" src="/lib/lunr/lunr.min.js" defer></script><script type="text/javascript" src="/lib/lunr/lunr.stemmer.support.min.js" defer></script><script type="text/javascript" src="/lib/lunr/lunr.zh.min.js" defer></script><script type="text/javascript" src="/lib/lazysizes/lazysizes.min.js" async defer></script><script type="text/javascript" src="/lib/clipboard/clipboard.min.js" defer></script><script type="text/javascript" src="/lib/katex/katex.min.js" defer></script><script type="text/javascript" src="/lib/katex/auto-render.min.js" defer></script><script type="text/javascript" src="/lib/katex/copy-tex.min.js" defer></script><script type="text/javascript" src="/lib/katex/mhchem.min.js" defer></script><script type="text/javascript" src="//busuanzi.ibruce.info/busuanzi/2.3/busuanzi.pure.mini.js" async defer></script><script type="text/javascript">window.config={"code":{"copyTitle":"复制到剪贴板","editLockTitle":"锁定可编辑代码块","editUnLockTitle":"解锁可编辑代码块","editable":true,"maxShownLines":10},"comment":{},"enablePWA":true,"ibruce":{"enable":true,"siteTime":""},"math":{"delimiters":[{"display":true,"left":"$$","right":"$$"},{"display":true,"left":"\\[","right":"\\]"},{"display":false,"left":"$","right":"$"},{"display":false,"left":"\\(","right":"\\)"}],"strict":false},"search":{"highlightTag":"em","lunrIndexURL":"/index.json","lunrLanguageCode":"zh","lunrSegmentitURL":"/lib/lunr/lunr.segmentit.js","maxResultLength":10,"noResultsFound":"没有找到结果","snippetLength":50,"type":"lunr"}};</script><script type="text/javascript" src="/js/theme.min.js" defer></script></body>
+</html>

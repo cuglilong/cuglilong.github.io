@@ -2,14 +2,20 @@
   xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
   xmlns:xhtml="http://www.w3.org/1999/xhtml"
   ><url>
-      <loc>https://cuglilong.github.io/posts/2022-03-10-example-blog/</loc><lastmod>2022-03-10T21:27:08&#43;08:00</lastmod><changefreq>weekly</changefreq><priority>1</priority></url><url>
-      <loc>https://cuglilong.github.io/categories/</loc><lastmod>2022-03-10T21:27:08&#43;08:00</lastmod><changefreq>weekly</changefreq><priority>1</priority></url><url>
-      <loc>https://cuglilong.github.io/tags/draft/</loc><lastmod>2022-03-10T21:27:08&#43;08:00</lastmod><changefreq>weekly</changefreq><priority>1</priority></url><url>
-      <loc>https://cuglilong.github.io/categories/draft/</loc><lastmod>2022-03-10T21:27:08&#43;08:00</lastmod><changefreq>weekly</changefreq><priority>1</priority></url><url>
-      <loc>https://cuglilong.github.io/</loc><lastmod>2022-03-10T21:27:08&#43;08:00</lastmod><changefreq>weekly</changefreq><priority>1</priority></url><url>
-      <loc>https://cuglilong.github.io/posts/</loc><lastmod>2022-03-10T21:27:08&#43;08:00</lastmod><changefreq>weekly</changefreq><priority>1</priority></url><url>
-      <loc>https://cuglilong.github.io/tags/</loc><lastmod>2022-03-10T21:27:08&#43;08:00</lastmod><changefreq>weekly</changefreq><priority>1</priority></url><url>
-      <loc>https://cuglilong.github.io/posts/2022-03-10-about-blog/</loc><lastmod>2022-03-10T19:18:42&#43;08:00</lastmod><changefreq>weekly</changefreq><priority>1</priority></url><url>
+      <loc>https://cuglilong.github.io/categories/</loc><lastmod>2023-06-09T15:09:02&#43;08:00</lastmod><changefreq>weekly</changefreq><priority>1</priority></url><url>
+      <loc>https://cuglilong.github.io/tags/draft/</loc><lastmod>2023-06-09T15:09:02&#43;08:00</lastmod><changefreq>weekly</changefreq><priority>1</priority></url><url>
+      <loc>https://cuglilong.github.io/categories/draft/</loc><lastmod>2023-06-09T15:09:02&#43;08:00</lastmod><changefreq>weekly</changefreq><priority>1</priority></url><url>
+      <loc>https://cuglilong.github.io/</loc><lastmod>2023-06-09T15:09:02&#43;08:00</lastmod><changefreq>weekly</changefreq><priority>1</priority></url><url>
+      <loc>https://cuglilong.github.io/posts/</loc><lastmod>2023-06-09T15:09:02&#43;08:00</lastmod><changefreq>weekly</changefreq><priority>1</priority></url><url>
+      <loc>https://cuglilong.github.io/tags/</loc><lastmod>2023-06-09T15:09:02&#43;08:00</lastmod><changefreq>weekly</changefreq><priority>1</priority></url><url>
+      <loc>https://cuglilong.github.io/posts/2023-06-09-das/2023-06-09-das/</loc><lastmod>2023-06-09T15:09:02&#43;08:00</lastmod><changefreq>weekly</changefreq><priority>1</priority></url><url>
+      <loc>https://cuglilong.github.io/posts/2022-12-08-seisfil/2022-12-03-seisfilo-manual-zh/</loc><lastmod>2022-12-08T09:43:30&#43;08:00</lastmod><changefreq>weekly</changefreq><priority>0.5</priority></url><url>
+      <loc>https://cuglilong.github.io/posts/2022-12-03-bayhunter/2022-12-03-bayhunter-manual-zh/</loc><lastmod>2022-12-03T16:42:51&#43;08:00</lastmod><changefreq>weekly</changefreq><priority>0.5</priority></url><url>
+      <loc>https://cuglilong.github.io/posts/2022-10-16-learning-data-structure/</loc><lastmod>2022-10-16T10:58:12&#43;08:00</lastmod><changefreq>weekly</changefreq><priority>0.5</priority></url><url>
+      <loc>https://cuglilong.github.io/posts/2022-05-27-egfanalysistimefreq-manual-chinese/</loc><lastmod>2022-05-27T11:07:13&#43;08:00</lastmod><changefreq>weekly</changefreq><priority>0.5</priority></url><url>
+      <loc>https://cuglilong.github.io/posts/2022-03-15-reading-papers/</loc><lastmod>2022-03-15T11:08:07&#43;08:00</lastmod><changefreq>weekly</changefreq><priority>0.5</priority></url><url>
+      <loc>https://cuglilong.github.io/posts/2022-03-18-learn-html/</loc><lastmod>2022-03-10T21:27:08&#43;08:00</lastmod><changefreq>weekly</changefreq><priority>0.5</priority></url><url>
+      <loc>https://cuglilong.github.io/posts/2022-03-10-about-blog/</loc><lastmod>2022-03-10T19:18:42&#43;08:00</lastmod><changefreq>weekly</changefreq><priority>0.5</priority></url><url>
       <loc>https://cuglilong.github.io/tags/myanmar/</loc><lastmod>2019-03-01T10:45:58&#43;08:00</lastmod><changefreq>weekly</changefreq><priority>0.5</priority></url><url>
       <loc>https://cuglilong.github.io/posts/2019-03-01-myanmar-field-work/</loc><lastmod>2019-03-01T10:45:58&#43;08:00</lastmod><changefreq>weekly</changefreq><priority>0.5</priority></url><url>
       <loc>https://cuglilong.github.io/posts/2018-09-20-translation-of-dsurftomo-manual/</loc><lastmod>2018-09-20T22:00:21&#43;08:00</lastmod><changefreq>weekly</changefreq><priority>0.5</priority></url><url>
@@ -19,8 +25,8 @@
       <loc>https://cuglilong.github.io/tags/linux/</loc><lastmod>2018-09-08T10:08:58&#43;08:00</lastmod><changefreq>weekly</changefreq><priority>0.5</priority></url><url>
       <loc>https://cuglilong.github.io/posts/2018-09-08-linux-problem/</loc><lastmod>2018-09-08T10:08:58&#43;08:00</lastmod><changefreq>weekly</changefreq><priority>0.5</priority></url><url>
       <loc>https://cuglilong.github.io/posts/2018-09-06-install-linux/</loc><lastmod>2018-09-06T09:22:45&#43;08:00</lastmod><changefreq>weekly</changefreq><priority>0.5</priority></url><url>
-      <loc>https://cuglilong.github.io/tags/%E9%87%8E%E5%A4%96%E5%87%86%E5%A4%87%E5%B7%A5%E4%BD%9C/</loc><lastmod>2018-07-10T23:59:53&#43;08:00</lastmod><changefreq>weekly</changefreq><priority>0.5</priority></url><url>
       <loc>https://cuglilong.github.io/posts/2018-07-10-select-station/</loc><lastmod>2018-07-10T23:59:53&#43;08:00</lastmod><changefreq>weekly</changefreq><priority>0.5</priority></url><url>
+      <loc>https://cuglilong.github.io/tags/%E9%87%8E%E5%A4%96%E5%87%86%E5%A4%87%E5%B7%A5%E4%BD%9C/</loc><lastmod>2018-07-10T23:59:53&#43;08:00</lastmod><changefreq>weekly</changefreq><priority>0.5</priority></url><url>
       <loc>https://cuglilong.github.io/tags/%E6%9C%BA%E5%99%A8%E5%AD%A6%E4%B9%A0/</loc><lastmod>2018-05-17T17:47:36&#43;08:00</lastmod><changefreq>weekly</changefreq><priority>0.5</priority></url><url>
       <loc>https://cuglilong.github.io/posts/2018-05-17-machine-learning/</loc><lastmod>2018-05-17T17:47:36&#43;08:00</lastmod><changefreq>weekly</changefreq><priority>0.5</priority></url><url>
       <loc>https://cuglilong.github.io/tags/git/</loc><lastmod>2018-05-14T19:26:21&#43;08:00</lastmod><changefreq>weekly</changefreq><priority>0.5</priority></url><url>

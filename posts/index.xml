@@ -4,12 +4,54 @@
     <link>https://cuglilong.github.io/posts/</link>
     <description>所有文章 | Long&#39;s blog</description>
     <generator>Hugo -- gohugo.io</generator><language>zh-CN</language><managingEditor>cuglilong@163.com (cuglilong)</managingEditor>
-      <webMaster>cuglilong@163.com (cuglilong)</webMaster><lastBuildDate>Thu, 10 Mar 2022 21:27:08 &#43;0800</lastBuildDate><atom:link href="https://cuglilong.github.io/posts/" rel="self" type="application/rss+xml" /><item>
-  <title>2022 03 10 Example Blog</title>
-  <link>https://cuglilong.github.io/posts/2022-03-10-example-blog/</link>
+      <webMaster>cuglilong@163.com (cuglilong)</webMaster><lastBuildDate>Fri, 09 Jun 2023 15:09:02 &#43;0800</lastBuildDate><atom:link href="https://cuglilong.github.io/posts/" rel="self" type="application/rss+xml" /><item>
+  <title>分布式光纤地震仪(Distributed Acoustic Sensing, DAS)</title>
+  <link>https://cuglilong.github.io/posts/2023-06-09-das/2023-06-09-das/</link>
+  <pubDate>Fri, 09 Jun 2023 15:09:02 &#43;0800</pubDate>
+  <author>作者</author>
+  <guid>https://cuglilong.github.io/posts/2023-06-09-das/2023-06-09-das/</guid>
+  <description><![CDATA[]]></description>
+</item><item>
+  <title>SEIS_FILO中文手册</title>
+  <link>https://cuglilong.github.io/posts/2022-12-08-seisfil/2022-12-03-seisfilo-manual-zh/</link>
+  <pubDate>Thu, 08 Dec 2022 09:43:30 &#43;0800</pubDate>
+  <author>作者</author>
+  <guid>https://cuglilong.github.io/posts/2022-12-08-seisfil/2022-12-03-seisfilo-manual-zh/</guid>
+  <description><![CDATA[]]></description>
+</item><item>
+  <title>BayHunter中文手册</title>
+  <link>https://cuglilong.github.io/posts/2022-12-03-bayhunter/2022-12-03-bayhunter-manual-zh/</link>
+  <pubDate>Sat, 03 Dec 2022 16:42:51 &#43;0800</pubDate>
+  <author>ucaslilong</author>
+  <guid>https://cuglilong.github.io/posts/2022-12-03-bayhunter/2022-12-03-bayhunter-manual-zh/</guid>
+  <description><![CDATA[]]></description>
+</item><item>
+  <title>数据结构与算法笔记</title>
+  <link>https://cuglilong.github.io/posts/2022-10-16-learning-data-structure/</link>
+  <pubDate>Sun, 16 Oct 2022 10:58:12 &#43;0800</pubDate>
+  <author>作者</author>
+  <guid>https://cuglilong.github.io/posts/2022-10-16-learning-data-structure/</guid>
+  <description><![CDATA[]]></description>
+</item><item>
+  <title>EGFAnalysisTimeFreq使用手册</title>
+  <link>https://cuglilong.github.io/posts/2022-05-27-egfanalysistimefreq-manual-chinese/</link>
+  <pubDate>Fri, 27 May 2022 11:07:13 &#43;0800</pubDate>
+  <author>作者</author>
+  <guid>https://cuglilong.github.io/posts/2022-05-27-egfanalysistimefreq-manual-chinese/</guid>
+  <description><![CDATA[]]></description>
+</item><item>
+  <title>2022 03 15 Reading Papers</title>
+  <link>https://cuglilong.github.io/posts/2022-03-15-reading-papers/</link>
+  <pubDate>Tue, 15 Mar 2022 11:08:07 &#43;0800</pubDate>
+  <author>作者</author>
+  <guid>https://cuglilong.github.io/posts/2022-03-15-reading-papers/</guid>
+  <description><![CDATA[]]></description>
+</item><item>
+  <title>HTML/CSS自学笔记</title>
+  <link>https://cuglilong.github.io/posts/2022-03-18-learn-html/</link>
   <pubDate>Thu, 10 Mar 2022 21:27:08 &#43;0800</pubDate>
   <author>作者</author>
-  <guid>https://cuglilong.github.io/posts/2022-03-10-example-blog/</guid>
+  <guid>https://cuglilong.github.io/posts/2022-03-18-learn-html/</guid>
   <description><![CDATA[]]></description>
 </item><item>
   <title>博客部署与博客源文件备份的几个问题</title>
@@ -32,47 +74,5 @@
   <author>cuglilong</author>
   <guid>https://cuglilong.github.io/posts/2018-09-20-translation-of-dsurftomo-manual/</guid>
   <description><![CDATA[本文为方洪健、姚华建DSurTomo英文用户手册翻译，仅供个人学习使用，原文及程序可从方洪健Github主页下载 1 描述 DSurfTomo 是面波反演程序，它能]]></description>
-</item><item>
-  <title>Makefile工作原理</title>
-  <link>https://cuglilong.github.io/posts/2018-09-18-makefile/</link>
-  <pubDate>Tue, 18 Sep 2018 15:17:36 &#43;0800</pubDate>
-  <author>cuglilong</author>
-  <guid>https://cuglilong.github.io/posts/2018-09-18-makefile/</guid>
-  <description><![CDATA[本文转载自Linux中国，主要关于Makefile的工作原理 makefile能更有效的运行和编译你的程序 准备材料： Linux系统 安装make]]></description>
-</item><item>
-  <title>Linux（Ubuntu）系统操作常见问题汇总</title>
-  <link>https://cuglilong.github.io/posts/2018-09-08-linux-problem/</link>
-  <pubDate>Sat, 08 Sep 2018 10:08:58 &#43;0800</pubDate>
-  <author>cuglilong</author>
-  <guid>https://cuglilong.github.io/posts/2018-09-08-linux-problem/</guid>
-  <description><![CDATA[本文主要记录在使用Linux（Ubuntu）系统时所遇到的问题及解决方法,主要参考阿里云 1 输入sudo命令，例如：sudo apt-get update，出]]></description>
-</item><item>
-  <title>Win系统下安装Linux系统所遇到的问题及解决方法</title>
-  <link>https://cuglilong.github.io/posts/2018-09-06-install-linux/</link>
-  <pubDate>Thu, 06 Sep 2018 09:22:45 &#43;0800</pubDate>
-  <author>cuglilong</author>
-  <guid>https://cuglilong.github.io/posts/2018-09-06-install-linux/</guid>
-  <description><![CDATA[本文主要记录安装Linux（Ubuntu）系统时所遇到的各种奇怪问题以及我所使用的解决方法，此篇将持续更新记录 1 引导文件损坏（即进不去系统）]]></description>
-</item><item>
-  <title>野外台站选点</title>
-  <link>https://cuglilong.github.io/posts/2018-07-10-select-station/</link>
-  <pubDate>Tue, 10 Jul 2018 23:59:53 &#43;0800</pubDate>
-  <author>cuglilong</author>
-  <guid>https://cuglilong.github.io/posts/2018-07-10-select-station/</guid>
-  <description><![CDATA[要求：给定首尾两点的经纬度坐标，要求台站间距为10km，如何确定台站数目以及各台站点经纬度。 工具：Google Earth、计算台站经纬度小程]]></description>
-</item><item>
-  <title>机器学习基础知识</title>
-  <link>https://cuglilong.github.io/posts/2018-05-17-machine-learning/</link>
-  <pubDate>Thu, 17 May 2018 17:47:36 &#43;0800</pubDate>
-  <author>cuglilong</author>
-  <guid>https://cuglilong.github.io/posts/2018-05-17-machine-learning/</guid>
-  <description><![CDATA[1.什么是机器学习 2.机器学习相关资料 3.机器学习基础]]></description>
-</item><item>
-  <title>Git基本操作</title>
-  <link>https://cuglilong.github.io/posts/2017-05-14-learn-git/</link>
-  <pubDate>Mon, 14 May 2018 19:26:21 &#43;0800</pubDate>
-  <author>cuglilong</author>
-  <guid>https://cuglilong.github.io/posts/2017-05-14-learn-git/</guid>
-  <description><![CDATA[1.Git是什么 分布式版本控制工具 2.Git安装 3.Git基本操作 3.1 创建版本库 3.2 初始化版本库 3.3 提交文件到版本库]]></description>
 </item></channel>
 </rss>

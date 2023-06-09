@@ -4,12 +4,54 @@
     <link>https://cuglilong.github.io/tags/draft/</link>
     <description>draft - 标签 - Long&#39;s blog</description>
     <generator>Hugo -- gohugo.io</generator><language>zh-CN</language><managingEditor>cuglilong@163.com (cuglilong)</managingEditor>
-      <webMaster>cuglilong@163.com (cuglilong)</webMaster><lastBuildDate>Thu, 10 Mar 2022 21:27:08 &#43;0800</lastBuildDate><atom:link href="https://cuglilong.github.io/tags/draft/" rel="self" type="application/rss+xml" /><item>
-  <title>2022 03 10 Example Blog</title>
-  <link>https://cuglilong.github.io/posts/2022-03-10-example-blog/</link>
+      <webMaster>cuglilong@163.com (cuglilong)</webMaster><lastBuildDate>Fri, 09 Jun 2023 15:09:02 &#43;0800</lastBuildDate><atom:link href="https://cuglilong.github.io/tags/draft/" rel="self" type="application/rss+xml" /><item>
+  <title>分布式光纤地震仪(Distributed Acoustic Sensing, DAS)</title>
+  <link>https://cuglilong.github.io/posts/2023-06-09-das/2023-06-09-das/</link>
+  <pubDate>Fri, 09 Jun 2023 15:09:02 &#43;0800</pubDate>
+  <author>作者</author>
+  <guid>https://cuglilong.github.io/posts/2023-06-09-das/2023-06-09-das/</guid>
+  <description><![CDATA[]]></description>
+</item><item>
+  <title>SEIS_FILO中文手册</title>
+  <link>https://cuglilong.github.io/posts/2022-12-08-seisfil/2022-12-03-seisfilo-manual-zh/</link>
+  <pubDate>Thu, 08 Dec 2022 09:43:30 &#43;0800</pubDate>
+  <author>作者</author>
+  <guid>https://cuglilong.github.io/posts/2022-12-08-seisfil/2022-12-03-seisfilo-manual-zh/</guid>
+  <description><![CDATA[]]></description>
+</item><item>
+  <title>BayHunter中文手册</title>
+  <link>https://cuglilong.github.io/posts/2022-12-03-bayhunter/2022-12-03-bayhunter-manual-zh/</link>
+  <pubDate>Sat, 03 Dec 2022 16:42:51 &#43;0800</pubDate>
+  <author>ucaslilong</author>
+  <guid>https://cuglilong.github.io/posts/2022-12-03-bayhunter/2022-12-03-bayhunter-manual-zh/</guid>
+  <description><![CDATA[]]></description>
+</item><item>
+  <title>数据结构与算法笔记</title>
+  <link>https://cuglilong.github.io/posts/2022-10-16-learning-data-structure/</link>
+  <pubDate>Sun, 16 Oct 2022 10:58:12 &#43;0800</pubDate>
+  <author>作者</author>
+  <guid>https://cuglilong.github.io/posts/2022-10-16-learning-data-structure/</guid>
+  <description><![CDATA[]]></description>
+</item><item>
+  <title>EGFAnalysisTimeFreq使用手册</title>
+  <link>https://cuglilong.github.io/posts/2022-05-27-egfanalysistimefreq-manual-chinese/</link>
+  <pubDate>Fri, 27 May 2022 11:07:13 &#43;0800</pubDate>
+  <author>作者</author>
+  <guid>https://cuglilong.github.io/posts/2022-05-27-egfanalysistimefreq-manual-chinese/</guid>
+  <description><![CDATA[]]></description>
+</item><item>
+  <title>2022 03 15 Reading Papers</title>
+  <link>https://cuglilong.github.io/posts/2022-03-15-reading-papers/</link>
+  <pubDate>Tue, 15 Mar 2022 11:08:07 &#43;0800</pubDate>
+  <author>作者</author>
+  <guid>https://cuglilong.github.io/posts/2022-03-15-reading-papers/</guid>
+  <description><![CDATA[]]></description>
+</item><item>
+  <title>HTML/CSS自学笔记</title>
+  <link>https://cuglilong.github.io/posts/2022-03-18-learn-html/</link>
   <pubDate>Thu, 10 Mar 2022 21:27:08 &#43;0800</pubDate>
   <author>作者</author>
-  <guid>https://cuglilong.github.io/posts/2022-03-10-example-blog/</guid>
+  <guid>https://cuglilong.github.io/posts/2022-03-18-learn-html/</guid>
   <description><![CDATA[]]></description>
 </item><item>
   <title>博客部署与博客源文件备份的几个问题</title>
